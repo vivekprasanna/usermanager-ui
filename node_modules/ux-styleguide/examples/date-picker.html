@@ -1,0 +1,424 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../dist/ux-styleguide.min.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8" />
+    <title>UX Styleguide - Inputs</title>
+    <style>
+		body {
+			background-color: #fff;
+			overflow-x: hidden;
+		}
+		
+		code,
+		pre {
+			padding: 0 3px 2px;
+			font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
+			font-size: 12px;
+			color: #333333;
+			-webkit-border-radius: 3px;
+			-moz-border-radius: 3px;
+			border-radius: 3px;
+			height: 100%;
+		}
+		
+		pre {
+			display: block;
+			padding: 9.5px;
+			margin: 0 0 10px;
+			font-size: 13px;
+			line-height: 20px;
+			word-break: break-all;
+			word-wrap: break-word;
+			white-space: pre;
+			white-space: pre-wrap;
+			background-color: #f5f5f5;
+			border: 1px solid #ccc;
+			border: 1px solid rgba(0, 0, 0, 0.15);
+			-webkit-border-radius: 4px;
+			-moz-border-radius: 4px;
+			border-radius: 4px;
+		}
+		
+		pre code {
+			padding: 0;
+			color: inherit;
+			white-space: pre;
+			white-space: pre-wrap;
+			background-color: transparent;
+			border: 0;
+		}
+		
+		section {
+			margin: auto;
+			padding: 10px;
+		}
+		
+		table {
+			width: 100%;
+			border-collapse: separate;
+			border-spacing: 10px 20px;
+		}
+		
+		td {
+			width: 50%;
+			vertical-align: top;
+			height: 1px;
+		}
+		
+		fieldset {
+			height: 100%;
+		}
+		
+		.back-btn {
+			font-size: 20px !important;
+            margin-right: 5px !important;
+		}
+
+        .back-btn > a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+		.content {
+			padding: 0 20px 0;
+		}
+	</style>
+    <script src="../dist/ux-styleguide.min.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <div class="header-logo">
+            <i class="icon_homedepot"></i>
+        </div>
+        <div class="header-info">
+            <label class="product-info">UX Styleguide</label>
+            <label class="user-info">Components and Patterns provided by Home Depot UX</label>
+        </div>
+        <div class="header-search">
+        </div>
+        <div class="header-actions">
+            <div class="back-btn">
+                <a href="../index.html">Back</a>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <h1>Date Pickers</h1>
+        <section>
+            <h3 class="border">Date Picker</h3>
+            <table>
+                <tr>
+                    <td>
+                        <div class="date-picker" id="datePicker1">
+                            <label>Default Picker</label>
+                        </div>
+                    </td>
+                    <td>
+                        <pre><code>&lt;!-- HTML SNIPPET --&gt;
+&lt;div id="pickerId" class="date-picker"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;label&gt;Optional Label&lt;/label&gt;
+&lt;/div&gt;
+
+/* JAVASCRIPT SNIPPET */
+// Callback function for when a date is selected
+var callback = function(date) {
+&nbsp;&nbsp;&nbsp;&nbsp;// formatted date string
+&nbsp;&nbsp;&nbsp;&nbsp;...
+};
+
+// Optional parameters
+var options = {
+&nbsp;&nbsp;&nbsp;&nbsp;placeholder: 'placeholder' // Placeholder text for picker input
+};
+
+// Initialize DatePicker via ID with callback and options
+new DatePicker('pickerId').init(callback, options);</code></pre>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="date-picker" id="datePicker2" aria-disabled="true">
+                            <label>Disabled Picker</label>
+                        </div>
+                    </td>
+                    <td>
+                        <pre><code>&lt;!-- HTML SNIPPET --&gt;
+&lt;div id="pickerId" class="date-picker" aria-disabled="true"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;label&gt;Optional Label&lt;/label&gt;
+&lt;/div&gt;</code></pre>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="date-picker" id="datePicker3" aria-invalid="true">
+                            <label>Invalid Picker</label>
+                        </div>
+                    </td>
+                    <td>
+                        <pre><code>&lt;!-- HTML SNIPPET --&gt;
+&lt;div id="pickerId" class="date-picker" aria-invalid="true"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;label&gt;Optional Label&lt;/label&gt;
+&lt;/div&gt;</code></pre>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="date-picker" id="datePicker4">
+                            <label>Date Picker w/ Default Date</label>
+                        </div>
+                    </td>
+                    <td>
+                        <pre><code>/* JAVASCRIPT SNIPPET */
+// Add the following to the Optional Parameters
+{
+    defaultDate: '2017-10-13' // a single Date object or a date string following the utilized dateFormat
+}
+</code></pre>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="date-picker" id="datePicker5">
+                            <label>Picker w/ Calendar and Input Functionality</label>
+                        </div>
+                    </td>
+                    <td>
+                        <pre><code>/* JAVASCRIPT SNIPPET */
+// Add the following to the Optional Parameters
+{
+    allowInput: true
+}</code></pre>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="date-picker" id="datePicker6">
+                            <label>Picker w/ Only Input Functionality</label>
+                        </div>
+                    </td>
+                    <td>
+                        <pre><code>/* JAVASCRIPT SNIPPET */
+// Add the following to the Optional Parameters
+{
+    onlyInput: true
+}</code></pre>
+                    </td>
+                </tr>
+            </table>
+            <script>
+                var callback = function (date) {
+                    console.log('date', date);
+                };
+    
+                new DatePicker('datePicker1').init(callback, {placeholder: 'Optional Placeholder'});
+                new DatePicker('datePicker2').init(callback, {});
+                new DatePicker('datePicker3').init(callback, {});
+                new DatePicker('datePicker4').init(callback, {defaultDate: new Date(Date.now() + 1*24*60*60*1000)});
+                new DatePicker('datePicker5').init(callback, { allowInput: true });
+                new DatePicker('datePicker6').init(callback, { inputOnly: true });
+            </script>
+            <h3 class="border">Date Range Picker</h3>
+            <table>
+                <tr>
+                    <td>
+                        <div class="date-range-picker" id="datePickerRange1">
+                            <label>Default Range Picker</label>
+                        </div>
+                    </td>
+                    <td>
+                        <pre><code>&lt;!-- HTML SNIPPET --&gt;
+&lt;div id="pickerId" class="date-range-picker"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;label&gt;Optional Label&lt;/label&gt;
+&lt;/div&gt;
+
+/* JAVASCRIPT SNIPPET */
+// Callback function for when a date range is selected
+var callback = function(dates) {
+&nbsp;&nbsp;&nbsp;&nbsp;// array of formatted start and end date strings
+&nbsp;&nbsp;&nbsp;&nbsp;...
+};
+
+// Optional parameters
+var options = {
+&nbsp;&nbsp;&nbsp;&nbsp;placeholder: 'placeholder' // Placeholder text for picker input
+};
+
+// Initialize DatePicker via ID with callback and options
+new DatePicker('pickerId').init(callback, options);</code></pre>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="date-range-picker" id="datePickerRange2" aria-disabled="true">
+                            <label>Disabled Range Picker</label>
+                        </div>
+                    </td>
+                    <td>
+                        <pre><code>&lt;!-- HTML SNIPPET --&gt;
+&lt;div id="pickerId" class="date-range-picker" aria-disabled="true"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;label&gt;Optional Label&lt;/label&gt;
+&lt;/div&gt;</code></pre>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="date-range-picker" id="datePickerRange3" aria-invalid="true">
+                            <label>Invalid Range Picker</label>
+                        </div>
+                    </td>
+                    <td>
+                        <pre><code>&lt;!-- HTML SNIPPET --&gt;
+&lt;div id="pickerId" class="date-range-picker" aria-invalid="true"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;label&gt;Optional Label&lt;/label&gt;
+&lt;/div&gt;</code></pre>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="date-range-picker" id="datePickerRange4">
+                            <label>Date Range Picker w/ Default Dates</label>
+                        </div>
+                    </td>
+                    <td>
+                        <pre><code>/* JAVASCRIPT SNIPPET */
+// Add the following to the Optional Parameters
+{
+    defaultDate: ['2017-10-13', '2017-10-15'] // an array of Date objects or date strings following the utilized dateFormat
+}
+</code></pre>
+                    </td>
+                </tr>
+            </table>
+            <script>
+                var callback = function (dates) {
+                    if(dates){
+                        console.log('start date', dates[0]);
+                        console.log('end date', dates[1]);
+                    }
+                };
+                
+                new DatePicker('datePickerRange1').init(callback, {placeholder: 'Optional Placeholder'});
+                new DatePicker('datePickerRange2').init(callback, {});
+                new DatePicker('datePickerRange3').init(callback, {});
+                new DatePicker('datePickerRange4').init(callback, {defaultDate: [new Date(Date.now() + 1*24*60*60*1000), new Date(Date.now() + 4*24*60*60*1000)]});
+            </script>
+            <h3 class="border">Date/Range Picker - Options</h3>
+            <p>Reset or Clear Functionality</p>
+            <table>
+                <tr>
+                    <td>
+                        <div class="date-picker" id="pickerReset">
+                            <label>Date Picker</label>
+                        </div>
+                        <button class="button md" onclick="resetPicker()">Reset Picker</button>
+                        <button class="button md" onclick="clearPicker()">Clear Picker</button>
+                        <br/>
+                    </td>
+                    <td>
+                        <pre><code>/* JAVASCRIPT SNIPPET */
+// Instantiate Picker into variable then initialize
+var picker = new DatePicker('pickerId');
+picker.init(callback, options);
+
+// To reset picker back to default date (if provided)
+picker.reset(); // executes callback, returning default date
+
+// To clear picker
+picker.clear(); // executes callback, returning null</code></pre>
+                    </td>
+                </tr>
+            </table>
+            <p>The following options can be passed via the options parameter when initializing a date/range picker:</p>
+            <table>
+                <tr>
+                    <td>
+                        <div class="date-picker" id="pickerOptions1">
+                            <label>Picker w/ Date Format</label>
+                        </div>
+                        <br/>
+                        <a href="https://chmln.github.io/flatpickr/formatting/#date-formatting-tokens" target="_blank">Click to View Date Format Tokens</a>
+                    </td>
+                    <td>
+                        <pre><code>/* JAVASCRIPT SNIPPET */
+// Add the following to the Optional Parameters
+{
+    dateFormat: 'F d, Y' 
+}</code></pre>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="date-picker" id="pickerOptions2">
+                            <label>Picker w/ Min and Max Dates</label>
+                        </div>
+                    </td>
+                    <td>
+                        <pre><code>/* JAVASCRIPT SNIPPET */
+// Add the following to the Optional Parameters
+{
+    minDate: '2017-10-13', // a single Date object or a date string following the utilized dateFormat
+    maxDate: '2017-11-13' // a single Date object or a date string following the utilized dateFormat
+}</code></pre>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="date-picker" id="pickerOptions3">
+                            <label>Picker w/ Week Numbers</label>
+                        </div>
+                    </td>
+                    <td>
+                        <pre><code>/* JAVASCRIPT SNIPPET */
+// Add the following to the Optional Parameters
+{
+    weekNumbers: true
+}</code></pre>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="date-picker" id="pickerOptions4">
+                            <label>Picker w/o Calendar Icon</label>
+                        </div>
+                    </td>
+                    <td>
+                        <pre><code>/* JAVASCRIPT SNIPPET */
+// Add the following to the Optional Parameters
+{
+    removeIcon: true
+}</code></pre>
+                    </td>
+                </tr>
+            </table>
+            <script>
+                var callback = function (date) {
+                    console.log('date', date);
+                };
+
+                var picker = new DatePicker('pickerReset');
+                picker.init(callback, { defaultDate: new Date(Date.now() + 1*24*60*60*1000) });
+                
+                function resetPicker() {
+                    picker.reset();
+                }
+
+                function clearPicker() {
+                    picker.clear();
+                }
+                
+                new DatePicker('pickerOptions1').init(callback, {dateFormat: 'F d, Y'});
+                new DatePicker('pickerOptions2').init(callback, {
+                    minDate: new Date(Date.now() - 7*24*60*60*1000),
+                    maxDate: new Date(Date.now() + 7*24*60*60*1000)
+                });
+                new DatePicker('pickerOptions3').init(callback, { weekNumbers: true });
+                new DatePicker('pickerOptions4').init(callback, { removeIcon: true });
+            </script>
+        </section>
+    </div>
+</body>

@@ -1,0 +1,1145 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../dist/ux-styleguide.min.css">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta charset="utf-8" />
+	<title>UX Styleguide - Inputs</title>
+	<style>
+		body {
+			background-color: #fff;
+			overflow-x: hidden;
+		}
+		
+		code,
+		pre {
+			padding: 0 3px 2px;
+			font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
+			font-size: 12px;
+			color: #333333;
+			-webkit-border-radius: 3px;
+			-moz-border-radius: 3px;
+			border-radius: 3px;
+			height: 100%;
+		}
+		
+		pre {
+			display: block;
+			padding: 9.5px;
+			margin: 0 0 10px;
+			font-size: 13px;
+			line-height: 20px;
+			word-break: break-all;
+			word-wrap: break-word;
+			white-space: pre;
+			white-space: pre-wrap;
+			background-color: #f5f5f5;
+			border: 1px solid #ccc;
+			border: 1px solid rgba(0, 0, 0, 0.15);
+			-webkit-border-radius: 4px;
+			-moz-border-radius: 4px;
+			border-radius: 4px;
+		}
+		
+		pre code {
+			padding: 0;
+			color: inherit;
+			white-space: pre;
+			white-space: pre-wrap;
+			background-color: transparent;
+			border: 0;
+		}
+		
+		section {
+			margin: auto;
+			padding: 10px;
+		}
+		
+		table {
+			width: 100%;
+			border-collapse: separate;
+			border-spacing: 10px 20px;
+		}
+		
+		td {
+			width: 50%;
+			vertical-align: top;
+			height: 1px;
+		}
+		
+		fieldset {
+			height: 100%;
+		}
+		
+		.back-btn {
+			font-size: 20px !important;
+            margin-right: 5px !important;
+		}
+
+        .back-btn > a {
+            color: #fff;
+            text-decoration: none;
+        }
+		
+		.content {
+			padding: 0 20px 0;
+		}
+	</style>
+	<script src="../dist/ux-styleguide.min.js"></script>
+</head>
+
+<body>
+	<div class="header">
+		<div class="header-logo">
+			<i class="icon_homedepot"></i>
+		</div>
+		<div class="header-info">
+			<label class="product-info">UX Styleguide</label>
+			<label class="user-info">Components and Patterns provided by Home Depot UX</label>
+		</div>
+		<div class="header-search">
+		</div>
+		<div class="header-actions">
+			<div class="back-btn">
+				<a href="../index.html">Back</a>
+			</div>
+		</div>
+	</div>
+	<div class="content">
+		<h1>INPUTS</h1>
+		<section>
+			<h3 class="border">TEXT INPUT</h3>
+			<table>
+				<tr>
+					<td>
+						<fieldset>
+							<legend>Default Text Input</legend>
+							<div class="text-input-container">
+								<input type="text" id="first-name" name="first-name" title="First Name" />
+								<label for="first-name">First Name</label>
+							</div>
+							<div class="text-input-container">
+								<input type="text" id="last-name" name="last-name" title="Last Name" />
+								<label for="last-name">Last Name</label>
+							</div>
+						</fieldset>
+					</td>
+					<td>
+						<pre><code>&lt;fieldset&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;legend&gt;Default Text Input&lt;/legend&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="text-input-container"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="text" id="first-name" name="first-name" title="First Name" /&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label for="first-name"&gt;First Name&lt;/label&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="text-input-container"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="text" id="last-name" name="last-name" title="Last Name" /&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label for="last-name"&gt;Last Name&lt;/label&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&lt;/fieldset&gt;</code></pre>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<fieldset>
+							<legend>Input Types</legend>
+							<div class="text-input-container">
+								<input type="email" id="first-name" name="email" title="Email Address" />
+								<label for="email">Email Input</label>
+							</div>
+							<div class="text-input-container">
+								<input type="tel" id="phone" name="phone" title="Phone Number" />
+								<label for="phone">Phone Input</label>
+							</div>
+							<div class="text-input-container">
+								<input type="url" id="website" name="website" title="Website" />
+								<label for="website">URL Input</label>
+							</div>
+							<div class="text-input-container">
+								<input type="password" id="password" name="password" title="Password" />
+								<label for="password">Password Input</label>
+							</div>
+						</fieldset>
+					</td>
+					<td>
+						<pre><code>&lt;fieldset&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;legend&gt;Input Types&lt;/legend&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="text-input-container"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="email" id="first-name" name="email" title="Email Address" /&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label for="email"&gt;Email Input&lt;/label&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="text-input-container"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="tel" id="phone" name="phone" title="Phone Number" /&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label for="phone"&gt;Phone Input&lt;/label&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="text-input-container"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="url" id="website" name="website" title="Website" /&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label for="website"&gt;URL Input&lt;/label&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="text-input-container"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="password" id="password" name="password" title="Password" /&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label for="password"&gt;Password Input&lt;/label&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&lt;/fieldset&gt;</code></pre>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<fieldset>
+							<legend>Disabled Text Inputs</legend>
+							<div class="text-input-container">
+								<input disabled type="text" id="disabled" name="disabled" title="Disabled" value="Sample text within disabled input" />
+								<label for="disabled">Disabled Input</label>
+							</div>
+						</fieldset>
+					</td>
+					<td>
+						<pre><code>&lt;fieldset&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;legend&gt;Disabled Text Inputs&lt;/legend&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="text-input-container"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input disabled type="text" id="disabled" name="disabled" title="Disabled" value="Sample text within disabled input" /&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label for="disabled"&gt;Disabled Input&lt;/label&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&lt;/fieldset&gt;</code></pre>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<fieldset>
+							<legend>Error Inputs</legend>
+							<div class="text-input-container error">
+								<input type="text" id="error" name="error" title="Error" />
+								<label for="error">Error Input</label>
+								<p class="error-msg">Sample Error Message</p>
+							</div>
+						</fieldset>
+					</td>
+					<td>
+						<pre><code>&lt;fieldset&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;legend&gt;Error Inputs&lt;/legend&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="text-input-container error"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="text" id="error" name="error" title="Error" /&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label for="error"&gt;Error Input&lt;/label&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p class="error-msg"&gt;Sample Error Message&lt;/p&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&lt;/fieldset&gt;</code></pre>
+					</td>
+				</tr>
+			</table>
+		</section>
+		<section>
+			<h3 class="border">TEXTAREA</h3>
+			<table>
+				<tr>
+					<td>
+						<fieldset>
+							<legend>Default Textarea</legend>
+							<div class="text-input-container">
+								<textarea id="textarea1" name="textarea1" title="Defaul Textarea"></textarea>
+								<label for="textarea1">Default Textarea</label>
+								<p class="textarea_counter">
+									<span>2000</span> Characters Remaining</p>
+							</div>
+						</fieldset>
+					</td>
+					<td>
+						<pre><code>&lt;fieldset&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;legend&gt;Default Textarea&lt;/legend&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="text-input-container"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;textarea id="textarea1" name="textarea1" title="Defaul Textarea"&gt;&lt;/textarea&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label for="textarea1"&gt;Default Textarea&lt;/label&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p class="textarea_counter"&gt;&lt;span&gt;2000&lt;/span&gt; Characters Remaining&lt;/p&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&lt;/fieldset&gt;</code></pre>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<fieldset>
+							<legend>Disabled Textarea</legend>
+							<div class="text-input-container">
+								<textarea disabled id="textarea2" name="textarea2" title="Disabled Textarea">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
+									eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam
+									voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
+									voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci
+									velit, sed quia non numquam eius modi tempora incidunt.</textarea>
+								<label for="textarea2">Disabled Textarea</label>
+								<p class="textarea_counter">
+									<span>2000</span> Characters Remaining</p>
+							</div>
+						</fieldset>
+					</td>
+					<td>
+						<pre><code>&lt;fieldset&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;legend&gt;Disabled Textarea&lt;/legend&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="text-input-container"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;textarea disabled id="textarea2" name="textarea2" title="Disabled Textarea"&gt;Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt.&lt;/textarea&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label for="textarea2"&gt;Disabled Textarea&lt;/label&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p class="textarea_counter"&gt;&lt;span&gt;2000&lt;/span&gt; Characters Remaining&lt;/p&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&lt;/fieldset&gt;</code></pre>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<fieldset>
+							<legend>Error Textarea</legend>
+							<div class="text-input-container error">
+								<textarea id="textarea3" name="textarea3" title="Error Textarea"></textarea>
+								<label for="textarea3">Error Textarea</label>
+								<p class="textarea_counter">
+									<span>2000</span> Characters Remaining</p>
+							</div>
+						</fieldset>
+					</td>
+					<td>
+						<pre><code>&lt;fieldset&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;legend&gt;Error Textarea&lt;/legend&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="text-input-container error"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;textarea id="textarea3" name="textarea3" title="Error Textarea"&gt;&lt;/textarea&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label for="textarea3"&gt;Error Textarea&lt;/label&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p class="textarea_counter"&gt;&lt;span&gt;2000&lt;/span&gt; Characters Remaining&lt;/p&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&lt;/fieldset&gt;</code></pre>
+					</td>
+				</tr>
+			</table>
+		</section>
+		<section>
+			<h3 class="border">SELECT INPUT</h3>
+			<table>
+				<tr>
+					<td>
+						<fieldset>
+							<legend>Default Select Input</legend>
+							<div class="select-container">
+								<select id="select1" name="select1" title="Default Select">
+									<option value="1">Option 1</option>
+									<option value="2">Option 2</option>
+									<option value="3">Option 3</option>
+									<option value="4">Option 4</option>
+								</select>
+								<label for="select1">Default Select</label>
+							</div>
+						</fieldset>
+					</td>
+					<td>
+						<pre><code>&lt;fieldset&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;legend&gt;Default Select Input&lt;/legend&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="select-container"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;select id="select1" name="select1" title="Default Select"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;option value="1"&gt;Option 1&lt;/option&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;option value="2"&gt;Option 2&lt;/option&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;option value="3"&gt;Option 3&lt;/option&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;option value="4"&gt;Option 4&lt;/option&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/select&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label for="select1"&gt;Default Select&lt;/label&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&lt;/fieldset&gt;</code></pre>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<fieldset>
+							<legend>Disabled Select Input</legend>
+							<div class="select-container">
+								<select disabled id="select2" name="select2" title="Disabled Select">
+									<option value="1">Option 1</option>
+									<option value="2">Option 2</option>
+									<option value="3">Option 3</option>
+									<option value="4">Option 4</option>
+								</select>
+								<label for="select2">Disabled Select</label>
+							</div>
+						</fieldset>
+					</td>
+					<td>
+						<pre><code>&lt;fieldset&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;legend&gt;Disabled Select Input&lt;/legend&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="select-container"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;select disabled id="select2" name="select2" title="Disabled Select"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;option value="1"&gt;Option 1&lt;/option&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;option value="2"&gt;Option 2&lt;/option&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;option value="3"&gt;Option 3&lt;/option&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;option value="4"&gt;Option 4&lt;/option&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/select&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label for="select2"&gt;Disabled Select&lt;/label&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&lt;/fieldset&gt;</code></pre>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<fieldset>
+							<legend>Error Select Input</legend>
+							<div class="select-container error">
+								<select id="select3" name="select3" title="Error Select">
+									<option value="1">Option 1</option>
+									<option value="2">Option 2</option>
+									<option value="3">Option 3</option>
+									<option value="4">Option 4</option>
+								</select>
+								<label for="select3">Error Select</label>
+								<p class="error-msg">Please select a value</p>
+							</div>
+						</fieldset>
+					</td>
+					<td>
+						<pre><code>&lt;fieldset&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;legend&gt;Error Select Input&lt;/legend&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="select-container error"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;select id="select3" name="select3" title="Error Select"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;option value="1"&gt;Option 1&lt;/option&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;option value="2"&gt;Option 2&lt;/option&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;option value="3"&gt;Option 3&lt;/option&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;option value="4"&gt;Option 4&lt;/option&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/select&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label for="select3"&gt;Error Select&lt;/label&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p class="error-msg"&gt;Please select a value&lt;/p&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&lt;/fieldset&gt;</code></pre>
+					</td>
+				</tr>
+			</table>
+		</section>
+		<section>
+			<h3 class="border">COUNTER</h3>
+			<table>
+				<tr>
+					<td>
+						<div id="counter1b" class="counter-input">
+							<label>Default Counter</label>
+						</div>
+					</td>
+					<td>
+						<pre><code>&lt;!-- HTML SNIPPET --&gt;
+&lt;div id="counterId" class="counter-input"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;label&gt;Optional Label&lt;/label&gt;
+&lt;/div&gt;
+
+/* JAVASCRIPT SNIPPET */
+// Callback function for when input is provided
+var callback = function(value) {
+&nbsp;&nbsp;&nbsp;&nbsp;// Perform action on value
+&nbsp;&nbsp;&nbsp;&nbsp;...
+};
+
+// Optional parameters
+var options = {
+&nbsp;&nbsp;&nbsp;&nbsp;initialValue: 3, // set initial value, default is 1
+&nbsp;&nbsp;&nbsp;&nbsp;min: 2, // set a minimum allowed value
+&nbsp;&nbsp;&nbsp;&nbsp;max: 5 // set a maximum allowed value
+};
+
+// Initialize CounterInput via ID with callback and options
+new CounterInput('counterId').init(callback, options);</code></pre>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<div id="counter1a" class="counter-input lg">
+							<label>Large Counter</label>
+						</div>
+					</td>
+					<td>
+						<pre><code>&lt;!-- HTML SNIPPET --&gt;
+&lt;div id="counterId" class="counter-input lg"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;label&gt;Optional Label&lt;/label&gt;
+&lt;/div&gt;</code></pre>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<div id="counter1c" class="counter-input sm">
+							<label>Small Counter</label>
+						</div>
+					</td>
+					<td>
+						<pre><code>&lt;!-- HTML SNIPPET --&gt;
+&lt;div id="counterId" class="counter-input sm"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;label&gt;Optional Label&lt;/label&gt;
+&lt;/div&gt;</code></pre>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<div id="counter2" class="counter-input" aria-disabled="true">
+							<label>Disabled Counter</label>
+						</div>
+					</td>
+					<td>
+						<pre><code>&lt;!-- HTML SNIPPET --&gt;
+&lt;div id="counterId" class="counter-input" aria-disabled="true"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;label&gt;Optional Label&lt;/label&gt;
+&lt;/div&gt;</code></pre>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<div id="counter3" class="counter-input" aria-invalid="true">
+							<label>Invalid Counter</label>
+						</div>
+					</td>
+					<td>
+						<pre><code>&lt;!-- HTML SNIPPET --&gt;
+&lt;div id="counterId" class="counter-input" aria-invalid="true"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;label&gt;Optional Label&lt;/label&gt;
+&lt;/div&gt;</code></pre>
+					</td>
+				</tr>
+			</table>
+			<script type="text/javascript">
+				var callback = function(value) {
+					console.log(value);
+				};
+				var options = {
+					initialValue: 3,
+					min: 2,
+					max: 5
+				};
+				new CounterInput('counter1a').init(callback, options);
+				new CounterInput('counter1b').init(callback, options);
+				new CounterInput('counter1c').init(callback, options);
+				new CounterInput('counter2').init(callback, options);
+				var errorOptions = {
+					initialValue: 1,
+					min: 2,
+					max: 5
+				};
+				new CounterInput('counter3').init(callback, errorOptions);
+			</script>
+		</section>
+		<section>
+			<h3 class="border">DROPDOWNS</h3>
+			<table>
+				<tr>
+					<td>
+						<div id="dl1" class="dropdown-list">
+							<label>Optional Label</label>
+						</div>
+					</td>
+					<td>
+						<pre><code>&lt;!-- HTML SNIPPET --&gt;
+&lt;div id="dropdownId" class="dropdown-list"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;label&gt;Optional Label&lt;/label&gt;
+&lt;/div&gt;
+
+/* JAVASCRIPT SNIPPET */
+// Array of list items
+var listItems = [
+&nbsp;&nbsp;&nbsp;&nbsp;{ 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;display: 'Optional Placeholder', // Display string to show in list
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;value: null // Value of selected item
+&nbsp;&nbsp;&nbsp;&nbsp;},
+&nbsp;&nbsp;&nbsp;&nbsp;{ 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;display: 'Item1', // Display string to show in list
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;value: 'item-1' // Value of selected item
+&nbsp;&nbsp;&nbsp;&nbsp;},
+&nbsp;&nbsp;&nbsp;&nbsp;{ 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;display: 'Item2', // Display string to show in list
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;value: 'item-2', // Value of selected item
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;selected: true // Set as default selected value
+&nbsp;&nbsp;&nbsp;&nbsp;}
+];
+
+// Callback function for when an item is selected
+var selectedCallback = function(value) {
+&nbsp;&nbsp;&nbsp;&nbsp;// receives the 'value' property of item
+&nbsp;&nbsp;&nbsp;&nbsp;console.log(value);
+};
+
+// Initialize DropdownList via ID with listItems and callback 
+new DropdownList('dropdownId').init(listItems, selectedCallback);
+						</code></pre>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<div id="dl2" class="dropdown-list" aria-disabled="true">
+							<label>Disabled Dropdown</label>
+						</div>
+					</td>
+					<td>
+						<pre><code>&lt;!-- HTML SNIPPET --&gt;
+&lt;div id="dropdownId" class="dropdown-list" aria-disabled="true"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;label&gt;Disabled Dropdown&lt;/label&gt;
+&lt;/div&gt;</code></pre>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<div id="dl3" class="dropdown-list" aria-invalid="true">
+							<label>Error Dropdown</label>
+						</div>
+					</td>
+					<td>
+						<pre><code>&lt;!-- HTML SNIPPET --&gt;
+&lt;div id="dropdownId" class="dropdown-list" aria-invalid="true"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;label&gt;Error Dropdown&lt;/label&gt;
+&lt;/div&gt;</code></pre>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<div id="dl4" class="dropdown-list">
+							<label>Set Selected Item by Index</label>
+						</div>
+						<button class="button primary md" onclick="updateSelected()">Update Selected</button>
+					</td>
+					<td>
+						<pre><code>&lt;!-- HTML SNIPPET --&gt;
+&lt;div id="dropdownId" class="dropdown-list"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;label&gt;Set Selected Item by Index&lt;/label&gt;
+&lt;/div&gt;
+
+/* JAVASCRIPT SNIPPET */
+// Initialize Dropdown
+var dropdown = new DropdownList('dropdownId');
+dropdown.init(listItems, selectedCallback);
+
+// Set selected item to index 2
+dropdown.setSelectedIndex(2);
+</code></pre>
+					</td>
+				</tr>
+			</table>
+			<script type="text/javascript">
+				var listItems = [
+					{ display: 'Optional Placeholder', value: null },
+					{ display: 'Item1', value: 'item-1' },
+					{ display: 'Item2', value: 'item-2'},
+					{ display: 'Item3', value: 'item-3' },
+					{ display: 'Item4', value: 'item-4', selected: true },
+					{ display: 'Item5', value: 'item-5' },
+					{ display: 'Item6', value: 'item-6' },
+					{ display: 'Item7', value: 'item-7' }
+				];
+				var selectedCallback = function(value) {
+					console.log(value);
+				};
+				new DropdownList('dl1').init(listItems, selectedCallback);
+				new DropdownList('dl2').init(listItems, selectedCallback);
+				new DropdownList('dl3').init(listItems, selectedCallback);
+				var dropdown4 = new DropdownList('dl4');
+				dropdown4.init(listItems, selectedCallback);
+
+				function updateSelected() {
+					dropdown4.setSelectedIndex(2);
+				}
+			</script>
+		</section>
+		<section>
+			<h3 class="border">CHECKBOX</h3>
+			<table>
+				<tr>
+					<td>
+						<fieldset>
+							<legend>Single Checkbox</legend>
+							<h4>Single Checkbox</h4>
+							<div role="checkbox" aria-checked="false" tabindex="0" id="cb1">
+								<label>Value Option 1</label>
+							</div>
+						</fieldset>
+					</td>
+					<td>
+						<pre><code>&lt;!-- HTML SNIPPET --&gt;
+&lt;h4&gt;Single Checkbox&lt;/h4&gt;
+&lt;div role="checkbox" aria-checked="false" tabindex="0" id="cb1"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;label&gt;Value Option 1&lt;/label&gt;
+&lt;/div&gt;
+
+/* JAVASCRIPT SNIPPET */
+new Checkbox('cb1').init();
+</code></pre>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<fieldset>
+							<legend>Default Checkbox (Vertical)</legend>
+							<div class="checkbox-group" id="cbg1">
+								<h4>Checkbox Group (Vertical)</h4>
+								<div role="checkbox" class="select-all" aria-checked="mixed" tabindex="0" id="cond0">
+									<label>Select All</label>
+								</div>
+								<div role="checkbox" aria-checked="true" tabindex="-1" id="cond1">
+									<label>Value Option 1</label>
+								</div>
+								<div role="checkbox" aria-checked="false" tabindex="-1" id="cond2">
+									<label>Value Option 2</label>
+								</div>
+								<div role="checkbox" aria-checked="false" tabindex="-1" id="cond3">
+									<label>Value Option 3</label>
+								</div>
+								<div role="checkbox" aria-checked="false" tabindex="-1" id="cond4">
+									<label>Value Option 4</label>
+								</div>
+							</div>
+						</fieldset>
+					</td>
+					<td>
+						<pre><code>&lt;!-- HTML SNIPPET --&gt;
+&lt;div class="checkbox-group" id="cbg1"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;h4&gt;Checkbox Group (Vertical)&lt;/h4&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div role="checkbox" class="select-all" aria-checked="mixed" tabindex="0" id="cond0"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label&gt;Select All&lt;/label&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div role="checkbox" aria-checked="true" tabindex="-1" id="cond1"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label&gt;Value Option 1&lt;/label&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div role="checkbox" aria-checked="false" tabindex="-1" id="cond2"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label&gt;Value Option 2&lt;/label&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div role="checkbox" aria-checked="false" tabindex="-1" id="cond3"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label&gt;Value Option 3&lt;/label&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div role="checkbox" aria-checked="false" tabindex="-1" id="cond4"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label&gt;Value Option 4&lt;/label&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&lt;/div&gt;
+
+/* JAVASCRIPT SNIPPET */
+new CheckboxGroup('cbg1').init();
+</code></pre>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<fieldset>
+							<legend>Checkbox (Horizontal)</legend>
+							<div class="checkbox-group horizontal" id="cbg2">
+								<h4>Checkbox (Horizontal)</h4>
+								<div role="checkbox" aria-checked="false" tabindex="0" id="cond6">
+									<label>Value Option 1</label>
+								</div>
+								<div role="checkbox" aria-checked="false" tabindex="-1" id="cond7">
+									<label>Value Option 2</label>
+								</div>
+								<div role="checkbox" aria-checked="false" tabindex="-1" id="cond8">
+									<label>Value Option 3</label>
+								</div>
+								<div role="checkbox" aria-checked="false" tabindex="-1" id="cond9">
+									<label>Value Option 4</label>
+								</div>
+							</div>
+						</fieldset>
+					</td>
+					<td>
+						<pre><code>&lt;!-- HTML SNIPPET --&gt;
+&lt;div class="checkbox-group horizontal" id="cbg2"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;h4&gt;Checkbox Group (Horizontal)&lt;/h4&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div role="checkbox" aria-checked="false" tabindex="0" id="cond6"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label&gt;Value Option 1&lt;/label&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div role="checkbox" aria-checked="false" tabindex="-1" id="cond7"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label&gt;Value Option 2&lt;/label&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div role="checkbox" aria-checked="false" tabindex="-1" id="cond8"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label&gt;Value Option 3&lt;/label&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div role="checkbox" aria-checked="false" tabindex="-1" id="cond9"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label&gt;Value Option 4&lt;/label&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&lt;/div&gt;
+
+/* JAVASCRIPT SNIPPET */
+new CheckboxGroup('cbg2').init();
+</code></pre>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<fieldset>
+							<legend>Disabled Checkboxes</legend>
+							<div class="checkbox-group" id="cbg3">
+								<h4>Disabled Checkboxes</h4>
+								<div role="checkbox" class="select-all" aria-checked="mixed" tabindex="-1" aria-disabled="true" class="disabled" id="cond10">
+									<label>Select All</label>
+								</div>
+								<div role="checkbox" aria-checked="true" tabindex="-1" aria-disabled="true" class="disabled" id="cond11">
+									<label>Value Option 1</label>
+								</div>
+								<div role="checkbox" aria-checked="false" tabindex="-1" aria-disabled="true" class="disabled" id="cond12">
+									<label>Value Option 2</label>
+								</div>
+								<div role="checkbox" aria-checked="false" tabindex="-1" aria-disabled="true" class="disabled" id="cond13">
+									<label>Value Option 3</label>
+								</div>
+								<div role="checkbox" aria-checked="false" tabindex="-1" aria-disabled="true" class="disabled" id="cond14">
+									<label>Value Option 4</label>
+								</div>
+							</div>
+						</fieldset>
+					</td>
+					<td>
+						<pre><code>&lt;!-- HTML SNIPPET --&gt;
+&lt;div class="checkbox-group" id="cbg3"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;h4&gt;Disabled Checkboxes&lt;/h4&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div role="checkbox" class="select-all" aria-checked="mixed" tabindex="-1" aria-disabled="true" class="disabled" id="cond10"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label&gt;Select All&lt;/label&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div role="checkbox" aria-checked="true" tabindex="-1" aria-disabled="true" class="disabled" id="cond11"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label&gt;Value Option 1&lt;/label&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div role="checkbox" aria-checked="false" tabindex="-1" aria-disabled="true" class="disabled" id="cond12"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label&gt;Value Option 2&lt;/label&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div role="checkbox" aria-checked="false" tabindex="-1" aria-disabled="true" class="disabled" id="cond13"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label&gt;Value Option 3&lt;/label&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div role="checkbox" aria-checked="false" tabindex="-1" aria-disabled="true" class="disabled" id="cond14"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label&gt;Value Option 4&lt;/label&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&lt;/div&gt;
+
+/* JAVASCRIPT SNIPPET */
+new CheckboxGroup('cbg3').init();
+</code></pre>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<fieldset>
+							<legend>Error Checkboxes</legend>
+							<div class="checkbox-group" id="cbg4">
+								<h4>Error Checkboxes</h4>
+								<div role="checkbox" class="select-all" aria-checked="false" tabindex="0" aria-invalid="true" class="invalid" id="cond15">
+									<label>Select All</label>
+								</div>
+								<div role="checkbox" aria-checked="false" tabindex="-1" aria-invalid="true" class="invalid" id="cond16">
+									<label>Value Option 1</label>
+								</div>
+								<div role="checkbox" aria-checked="false" tabindex="-1" aria-invalid="true" class="invalid" id="cond17">
+									<label>Value Option 2</label>
+								</div>
+								<div role="checkbox" aria-checked="false" tabindex="-1" aria-invalid="true" class="invalid" id="cond18">
+									<label>Value Option 3</label>
+								</div>
+								<div role="checkbox" aria-checked="false" tabindex="-1" aria-invalid="true" class="invalid" id="cond19">
+									<label>Value Option 4</label>
+								</div>
+							</div>
+						</fieldset>
+					</td>
+					<td>
+						<pre><code>&lt;!-- HTML SNIPPET --&gt;
+&lt;div class="checkbox-group" id="cbg4"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;h4&gt;Error Checkboxes&lt;/h4&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div role="checkbox" class="select-all" aria-checked="false" tabindex="0" aria-invalid="true" class="invalid" id="cond15"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label&gt;Select All&lt;/label&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div role="checkbox" aria-checked="false" tabindex="-1" aria-invalid="true" class="invalid" id="cond16"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label&gt;Value Option 1&lt;/label&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div role="checkbox" aria-checked="false" tabindex="-1" aria-invalid="true" class="invalid" id="cond17"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label&gt;Value Option 2&lt;/label&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div role="checkbox" aria-checked="false" tabindex="-1" aria-invalid="true" class="invalid" id="cond18"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label&gt;Value Option 3&lt;/label&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div role="checkbox" aria-checked="false" tabindex="-1" aria-invalid="true" class="invalid" id="cond19"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label&gt;Value Option 4&lt;/label&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&lt;/div&gt;
+
+/* JAVASCRIPT SNIPPET */
+new CheckboxGroup('cbg4').init();
+</code></pre>
+					</td>
+				</tr>
+			</table>
+			<script type="text/javascript">
+				new Checkbox('cb1').init();
+				new CheckboxGroup('cbg1').init();
+				new CheckboxGroup('cbg2').init();
+				new CheckboxGroup('cbg3').init();
+				new CheckboxGroup('cbg4').init();
+			</script>
+		</section>
+		<section>
+			<h3 class="border">RADIO BUTTONS</h3>
+			<table>
+				<tr>
+					<td>
+						<fieldset>
+							<legend>Default Radio Buttons (Vertical)</legend>
+							<div role="radiogroup" aria-labelledby="group_label_1" id="rg1" class="vertical">
+								<h4 id="group_label_1">Default Radio Buttons (Vertical)</h4>
+								<div role="radio" aria-checked="false" tabindex="0">
+									<label>Value Option 1</label>
+								</div>
+								<div role="radio" aria-checked="false" tabindex="-1">
+									<label>Value Option 2</label>
+								</div>
+								<div role="radio" aria-checked="false" tabindex="-1">
+									<label>Value Option 3</label>
+								</div>
+								<div role="radio" aria-checked="false" tabindex="-1">
+									<label>Value Option 4</label>
+								</div>
+								<div role="radio" aria-checked="false" tabindex="-1">
+									<label>Value Option 5</label>
+								</div>
+							</div>
+						</fieldset>
+					</td>
+					<td>
+						<pre><code>&lt;!-- HTML SNIPPET --&gt;
+&lt;div role="radiogroup" aria-labelledby="group_label_1" id="rg1" class="vertical"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;h4 id="group_label_1"&gt;Default Radio Buttons (Vertical)&lt;/h4&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div role="radio" aria-checked="false" tabindex="0"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label&gt;Value Option 1&lt;/label&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div role="radio" aria-checked="false" tabindex="-1"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label&gt;Value Option 2&lt;/label&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div role="radio" aria-checked="false" tabindex="-1"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label&gt;Value Option 3&lt;/label&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div role="radio" aria-checked="false" tabindex="-1"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label&gt;Value Option 4&lt;/label&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div role="radio" aria-checked="false" tabindex="-1"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label&gt;Value Option 5&lt;/label&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&lt;/div&gt;
+
+/* JAVASCRIPT SNIPPET */
+new RadioGroup('rg1').init();
+</code></pre>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<fieldset>
+							<legend>Default Radio Buttons (Horizontal)</legend>
+							<div role="radiogroup" aria-labelledby="group_label_2" id="rg2">
+								<h4 id="group_label_2">Default Radio Buttons (Horizontal)</h4>
+								<div role="radio" aria-checked="false" tabindex="0">
+									<label>Value Option 1</label>
+								</div>
+								<div role="radio" aria-checked="false" tabindex="-1">
+									<label>Value Option 2</label>
+								</div>
+								<div role="radio" aria-checked="false" tabindex="-1">
+									<label>Value Option 3</label>
+								</div>
+								<div role="radio" aria-checked="false" tabindex="-1">
+									<label>Value Option 4</label>
+								</div>
+								<div role="radio" aria-checked="false" tabindex="-1">
+									<label>Value Option 5</label>
+								</div>
+							</div>
+						</fieldset>
+					</td>
+					<td>
+						<pre><code>&lt;!-- HTML SNIPPET --&gt;
+&lt;div role="radiogroup" aria-labelledby="group_label_2" id="rg2"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;h4 id="group_label_2"&gt;Default Radio Buttons (Horizontal)&lt;/h4&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div role="radio" aria-checked="false" tabindex="0"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label&gt;Value Option 1&lt;/label&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div role="radio" aria-checked="false" tabindex="-1"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label&gt;Value Option 2&lt;/label&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div role="radio" aria-checked="false" tabindex="-1"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label&gt;Value Option 3&lt;/label&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div role="radio" aria-checked="false" tabindex="-1"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label&gt;Value Option 4&lt;/label&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div role="radio" aria-checked="false" tabindex="-1"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label&gt;Value Option 5&lt;/label&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&lt;/div&gt;
+
+/* JAVASCRIPT SNIPPET */
+new RadioGroup('rg2').init();
+</code></pre>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<fieldset>
+							<legend>Disabled Radio Group</legend>
+							<div role="radiogroup" aria-labelledby="group_label_3" id="rg3" class="vertical">
+								<h4 id="group_label_3">Disabled Radio Group</h4>
+								<div role="radio" aria-checked="false" tabindex="0" aria-disabled="true">
+									<label>Value Option 1</label>
+								</div>
+								<div role="radio" aria-checked="true" tabindex="-1" aria-disabled="true">
+									<label>Value Option 2</label>
+								</div>
+								<div role="radio" aria-checked="false" tabindex="-1" aria-disabled="true">
+									<label>Value Option 3</label>
+								</div>
+								<div role="radio" aria-checked="false" tabindex="-1" aria-disabled="true">
+									<label>Value Option 4</label>
+								</div>
+								<div role="radio" aria-checked="false" tabindex="-1" aria-disabled="true">
+									<label>Value Option 5</label>
+								</div>
+							</div>
+						</fieldset>
+					</td>
+					<td>
+						<pre><code>&lt;!-- HTML SNIPPET --&gt;
+&lt;div role="radiogroup" aria-labelledby="group_label_3" id="rg3" class="vertical"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;h4 id="group_label_3"&gt;Disabled Radio Group&lt;/h4&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div role="radio" aria-checked="false" tabindex="0" aria-disabled="true"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label&gt;Value Option 1&lt;/label&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div role="radio" aria-checked="true" tabindex="-1" aria-disabled="true"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label&gt;Value Option 2&lt;/label&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div role="radio" aria-checked="false" tabindex="-1" aria-disabled="true"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label&gt;Value Option 3&lt;/label&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div role="radio" aria-checked="false" tabindex="-1" aria-disabled="true"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label&gt;Value Option 4&lt;/label&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div role="radio" aria-checked="false" tabindex="-1" aria-disabled="true"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label&gt;Value Option 5&lt;/label&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&lt;/div&gt;
+
+/* JAVASCRIPT SNIPPET */
+new RadioGroup('rg3').init();
+</code></pre>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<fieldset>
+							<legend>Invalid Radio Group</legend>
+							<div role="radiogroup" aria-labelledby="group_label_4" id="rg4" class="vertical">
+								<h4 id="group_label_4">Invalid Radio Group</h4>
+								<div role="radio" aria-checked="false" tabindex="0" aria-invalid="true">
+									<label>Value Option 1</label>
+								</div>
+								<div role="radio" aria-checked="false" tabindex="-1" aria-invalid="true">
+									<label>Value Option 2</label>
+								</div>
+								<div role="radio" aria-checked="false" tabindex="-1" aria-invalid="true">
+									<label>Value Option 3</label>
+								</div>
+								<div role="radio" aria-checked="false" tabindex="-1" aria-invalid="true">
+									<label>Value Option 4</label>
+								</div>
+								<div role="radio" aria-checked="false" tabindex="-1" aria-invalid="true">
+									<label>Value Option 5</label>
+								</div>
+							</div>
+						</fieldset>
+					</td>
+					<td>
+						<pre><code>&lt;!-- HTML SNIPPET --&gt;
+&lt;div role="radiogroup" aria-labelledby="group_label_4" id="rg4" class="vertical"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;h4 id="group_label_4"&gt;Invalid Radio Group&lt;/h4&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div role="radio" aria-checked="false" tabindex="0" aria-invalid="true"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label&gt;Value Option 1&lt;/label&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div role="radio" aria-checked="false" tabindex="-1" aria-invalid="true"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label&gt;Value Option 2&lt;/label&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div role="radio" aria-checked="false" tabindex="-1" aria-invalid="true"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label&gt;Value Option 3&lt;/label&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div role="radio" aria-checked="false" tabindex="-1" aria-invalid="true"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label&gt;Value Option 4&lt;/label&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div role="radio" aria-checked="false" tabindex="-1" aria-invalid="true"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label&gt;Value Option 5&lt;/label&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&lt;/div&gt;
+
+/* JAVASCRIPT SNIPPET */
+new RadioGroup('rg4').init();
+</code></pre>
+					</td>
+				</tr>
+			</table>
+			<script type="text/javascript">
+				new RadioGroup('rg1').init();
+				new RadioGroup('rg2').init();
+				new RadioGroup('rg3').init();
+				new RadioGroup('rg4').init();
+			</script>
+		</section>
+		<section>
+			<h3 class="border">TOGGLE</h3>
+			<table>
+				<tr>
+					<td>
+						<fieldset>
+							<legend>Default Toggle Off</legend>
+							<div class="toggle-container">
+								<input type="checkbox" id="toggle1" name="switchgroup1" title="Toggle1" class="toggle">
+								<label for="toggle1">
+									<span>Default Toggle Off</span>
+								</label>
+							</div>
+							<legend>Default Toggle On</legend>
+							<div class="toggle-container">
+								<input checked type="checkbox" id="toggle2" name="switchgroup1" title="Toggle2" class="toggle">
+								<label for="toggle2">
+									<span>Default Toggle On</span>
+								</label>
+							</div>
+						</fieldset>
+					</td>
+					<td>
+						<pre><code>&lt;fieldset&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;legend&gt;Default Toggle Off&lt;/legend&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="toggle-container"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="checkbox" id="toggle1" name="switchgroup1" title="Toggle1" class="toggle"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label for="toggle1"&gt;&lt;span&gt;Default Toggle Off&lt;/span&gt;&lt;/label&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;legend&gt;Default Toggle On&lt;/legend&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="toggle-container"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input checked type="checkbox" id="toggle2" name="switchgroup1" title="Toggle2" class="toggle"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label for="toggle2"&gt;&lt;span&gt;Default Toggle On&lt;/span&gt;&lt;/label&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&lt;/fieldset&gt;</code></pre>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<fieldset>
+							<legend>Disabled Toggle</legend>
+							<div class="toggle-container">
+								<input disabled type="checkbox" id="toggle3" name="switchgroup2" title="Toggle3" class="toggle">
+								<label for="toggle3">
+									<span>Disabled Toggle Off</span>
+								</label>
+							</div>
+							<div class="toggle-container">
+								<input disabled checked type="checkbox" id="toggle4" name="switchgroup2" title="Toggle4" class="toggle">
+								<label for="toggle4">
+									<span>Disabled Toggle On</span>
+								</label>
+							</div>
+						</fieldset>
+					</td>
+					<td>
+						<pre><code>&lt;fieldset&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;legend&gt;Disabled Toggle&lt;/legend&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="toggle-container"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input disabled type="checkbox" id="toggle3" name="switchgroup2" title="Toggle3" class="toggle"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label for="toggle3"&gt;&lt;span&gt;Disabled Toggle Off&lt;/span&gt;&lt;/label&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="toggle-container"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input disabled checked type="checkbox" id="toggle4" name="switchgroup2" title="Toggle4" class="toggle"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label for="toggle4"&gt;&lt;span&gt;Disabled Toggle On&lt;/span&gt;&lt;/label&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&lt;/fieldset&gt;</code></pre>
+					</td>
+				</tr>
+			</table>
+		</section>
+	</div>
+</body>
+
+</html>

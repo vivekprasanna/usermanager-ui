@@ -1,0 +1,513 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../dist/ux-styleguide.min.css">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta charset="utf-8" />
+	<title>UX Styleguide - Tabs</title>
+	<style>
+		body {
+			background-color: #fff;
+			overflow-x: hidden;
+		}
+		
+		code,
+		pre {
+			padding: 0 3px 2px;
+			font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
+			font-size: 12px;
+			color: #333333;
+			-webkit-border-radius: 3px;
+			-moz-border-radius: 3px;
+			border-radius: 3px;
+			height: 100%;
+		}
+		
+		pre {
+			display: block;
+			padding: 9.5px;
+			margin: 0 0 10px;
+			font-size: 13px;
+			line-height: 20px;
+			word-break: break-all;
+			word-wrap: break-word;
+			white-space: pre;
+			white-space: pre-wrap;
+			background-color: #f5f5f5;
+			border: 1px solid #ccc;
+			border: 1px solid rgba(0, 0, 0, 0.15);
+			-webkit-border-radius: 4px;
+			-moz-border-radius: 4px;
+			border-radius: 4px;
+		}
+		
+		pre code {
+			padding: 0;
+			color: inherit;
+			white-space: pre;
+			white-space: pre-wrap;
+			background-color: transparent;
+			border: 0;
+		}
+		
+		section {
+			margin: auto;
+			padding: 10px;
+		}
+		
+		table {
+			width: 100%;
+			border-collapse: separate;
+			border-spacing: 10px 20px;
+		}
+		
+		td {
+			width: 50%;
+			vertical-align: top;
+			height: 1px;
+		}
+		
+		.back-btn {
+			font-size: 20px !important;
+            margin-right: 5px !important;
+		}
+		
+		.back-btn > a {
+			color: #fff;
+			text-decoration: none;
+		}
+
+		.content {
+			padding: 0 20px 0;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="header">
+		<div class="header-logo">
+			<i class="icon_homedepot"></i>
+		</div>
+		<div class="header-info">
+			<label class="product-info">UX Styleguide</label>
+			<label class="user-info">Components and Patterns provided by Home Depot UX</label>
+		</div>
+		<div class="header-search">
+		</div>
+		<div class="header-actions">
+			<div class="back-btn">
+				<a href="../index.html">Back</a>
+			</div>
+		</div>
+	</div>
+	<div class="content">
+		<h1>Tabs</h1>
+		<section>
+			<h3 class="border">Default Tabs</h3>
+			<table>
+				<tr>
+					<td>
+						<div class="tabs" id="tabs1">
+							<div role="tablist">
+								<button role="tab" aria-selected="true" aria-controls="name-1-tab" id="name-1" tabindex="0">Tab Link 1</button>
+								<button role="tab" aria-selected="false" aria-controls="name-2-tab" id="name-2" tabindex="-1">Tab Link 2</button>
+								<button role="tab" aria-selected="false" aria-controls="name-3-tab" id="name-3" tabindex="-1">Tab Link 3</button>
+							</div>
+							<div role="tabpanel" id="name-1-tab" aria-labelledby="name-1">
+								<h4>Tab Panel 1</h4>
+								<p>
+									Varius massa molestie quod leo lacus. Sed mi condimentum tincidunt molestie suspendisse, sapien pretium in nunc et, turpis
+									curabitur, ultrices nulla vel curabitur, orci vivamus sed dui aliquam diam. Ultricies et at aliquet amet, potenti
+									dapibus aptent maecenas pulvinar ac. Egestas imperdiet nulla a diam vel fringilla, integer eros velit habitasse
+									sit, eu tristique. Massa eleifend vel maecenas porta, ullamcorper nibh dolor. Pellentesque malesuada sagittis consectetuer
+									dictum enim, est condimentum, tempus curabitur quam orci sed nonummy, lorem accumsan facilisis vel, laoreet donec
+									ac sed libero suspendisse mauris.
+								</p>
+								<p>
+									Quisque in, ipsum cras. Mi odio nullam vitae non justo fringilla, ac habitasse ac, ut risus adipiscing urna suscipit vitae.
+									Rutrum felis. Odio vulputate dictum, quisque elementum ultricies interdum, at ipsum lobortis, imperdiet elit ad
+									pharetra. Wisi torquent diam libero elit, cursus odio penatibus morbi. Magna et diam maecenas sed vestibulum malesuada,
+									porttitor hymenaeos in elit montes justo, quam quis vel venenatis, nulla auctor vivamus, vitae montes pellentesque
+									in neque quis sed. Ac massa ullamcorper morbi, luctus in. Hendrerit sodales aliquet sed aenean, condimentum ultricies
+									vestibulum aliquet, libero augue imperdiet et mauris nam praesent, eu tellus ridiculus magna pellentesque vitae
+									fusce, rhoncus porta sociis. Sit vivamus, ante condimentum urna ea nibh sit, in lobortis, sit vel arcu diam. Magna
+									amet magna fermentum arcu ipsum, arcu massa. Lobortis orci quo est, cras luctus vitae ac aenean sed, aenean dui,
+									sit donec.
+								</p>
+							</div>
+							<div role="tabpanel" id="name-2-tab" aria-labelledby="name-2" hidden>
+								<h4>Tab Panel 2</h4>
+								<p>
+									Quisque in, ipsum cras. Mi odio nullam vitae non justo fringilla, ac habitasse ac, ut risus adipiscing urna suscipit vitae.
+									Rutrum felis. Odio vulputate dictum, quisque elementum ultricies interdum, at ipsum lobortis, imperdiet elit ad
+									pharetra. Wisi torquent diam libero elit, cursus odio penatibus morbi. Magna et diam maecenas sed vestibulum malesuada,
+									porttitor hymenaeos in elit montes justo, quam quis vel venenatis, nulla auctor vivamus, vitae montes pellentesque
+									in neque quis sed. Ac massa ullamcorper morbi, luctus in. Hendrerit sodales aliquet sed aenean, condimentum ultricies
+									vestibulum aliquet, libero augue imperdiet et mauris nam praesent, eu tellus ridiculus magna pellentesque vitae
+									fusce, rhoncus porta sociis. Sit vivamus, ante condimentum urna ea nibh sit, in lobortis, sit vel arcu diam. Magna
+									amet magna fermentum arcu ipsum, arcu massa. Lobortis orci quo est, cras luctus vitae ac aenean sed, aenean dui,
+									sit donec.
+								</p>
+							</div>
+							<div role="tabpanel" id="name-3-tab" aria-labelledby="name-3" hidden>
+								<h4>Tab Panel 3</h4>
+								<p>
+									Lorem ipsum dolor sit amet, velit lorem id, montes dignissim bibendum potenti mauris, quis in odio mauris animi. Eros interdum,
+									quis amet aperiam aliquet pellentesque. Quam convallis ultricies. Luctus ligula posuere erat dolor. Quisque tempor
+									ac elementum tortor iaculis, nunc mauris, nostra nulla felis euismod adipiscing sed vitae. Vivamus suscipit turpis,
+									lacus sed, id in et, cras accumsan viverra nec malesuada laoreet tristique, ipsum habitant primis dui quam nam eget.
+									Nulla et rutrum mauris, ad mollis non tellus id urna, rutrum diam sagittis quis elit ad nec, ridiculus curabitur
+									eleifend libero lorem tellus. Luctus hymenaeos interdum ut velit dui, habitasse metus elementum sodales ac volutpat
+									libero, ut quis per cumque.
+								</p>
+							</div>
+						</div>
+					</td>
+					<td>
+						<pre><code>&lt;!-- HTML SNIPPET --&gt;
+&lt;div class="tabs" id="tabs1"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div role="tablist"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;button role="tab" aria-selected="true" aria-controls="name-1-tab" id="name-1" tabindex="0"&gt;Tab Link 1&lt;/button&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;button role="tab" aria-selected="false" aria-controls="name-2-tab" id="name-2" tabindex="-1"&gt;Tab Link 2&lt;/button&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;button role="tab" aria-selected="false" aria-controls="name-3-tab" id="name-3" tabindex="-1"&gt;Tab Link 3&lt;/button&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div role="tabpanel" id="name-1-tab" aria-labelledby="name-1"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h4&gt;Tab Panel 1&lt;/h4&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tab Content 1.1
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/p&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tab Content 1.2
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/p&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div role="tabpanel" id="name-2-tab" aria-labelledby="name-2" hidden&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h4&gt;Tab Panel 2&lt;/h4&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tab Content 2
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/p&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div role="tabpanel" id="name-3-tab" aria-labelledby="name-3" hidden&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h4&gt;Tab Panel 3&lt;/h4&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tab Content 3
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/p&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&lt;/div&gt;
+
+/* JAVASCRIPT SNIPPET */
+new TabList('tabs1').init();
+</code></pre>
+					</td>
+				</tr>
+			</table>
+		</section>
+		<section>
+			<h3 class="border">Tabs w/border</h3>
+			<table>
+				<tr>
+					<td>
+						<div class="tabs-bordered" id="tabs2">
+							<div role="tablist">
+								<button role="tab" aria-selected="true" aria-controls="name-4-tab" id="name-4" tabindex="0">Tab Link 1</button>
+								<button role="tab" aria-selected="false" aria-controls="name-5-tab" id="name-5" tabindex="-1">Tab Link 2</button>
+								<button role="tab" aria-selected="false" aria-controls="name-6-tab" id="name-6" tabindex="-1">Tab Link 3</button>
+							</div>
+							<div role="tabpanel" id="name-4-tab" aria-labelledby="name-4">
+								<h4>Tab Panel 1</h4>
+								<p>
+									Varius massa molestie quod leo lacus. Sed mi condimentum tincidunt molestie suspendisse, sapien pretium in nunc et, turpis
+									curabitur, ultrices nulla vel curabitur, orci vivamus sed dui aliquam diam. Ultricies et at aliquet amet, potenti
+									dapibus aptent maecenas pulvinar ac. Egestas imperdiet nulla a diam vel fringilla, integer eros velit habitasse
+									sit, eu tristique. Massa eleifend vel maecenas porta, ullamcorper nibh dolor. Pellentesque malesuada sagittis consectetuer
+									dictum enim, est condimentum, tempus curabitur quam orci sed nonummy, lorem accumsan facilisis vel, laoreet donec
+									ac sed libero suspendisse mauris.
+								</p>
+								<p>
+									Quisque in, ipsum cras. Mi odio nullam vitae non justo fringilla, ac habitasse ac, ut risus adipiscing urna suscipit vitae.
+									Rutrum felis. Odio vulputate dictum, quisque elementum ultricies interdum, at ipsum lobortis, imperdiet elit ad
+									pharetra. Wisi torquent diam libero elit, cursus odio penatibus morbi. Magna et diam maecenas sed vestibulum malesuada,
+									porttitor hymenaeos in elit montes justo, quam quis vel venenatis, nulla auctor vivamus, vitae montes pellentesque
+									in neque quis sed. Ac massa ullamcorper morbi, luctus in. Hendrerit sodales aliquet sed aenean, condimentum ultricies
+									vestibulum aliquet, libero augue imperdiet et mauris nam praesent, eu tellus ridiculus magna pellentesque vitae
+									fusce, rhoncus porta sociis. Sit vivamus, ante condimentum urna ea nibh sit, in lobortis, sit vel arcu diam. Magna
+									amet magna fermentum arcu ipsum, arcu massa. Lobortis orci quo est, cras luctus vitae ac aenean sed, aenean dui,
+									sit donec.
+								</p>
+							</div>
+							<div role="tabpanel" id="name-5-tab" aria-labelledby="name-5" hidden>
+								<h4>Tab Panel 2</h4>
+								<p>
+									Quisque in, ipsum cras. Mi odio nullam vitae non justo fringilla, ac habitasse ac, ut risus adipiscing urna suscipit vitae.
+									Rutrum felis. Odio vulputate dictum, quisque elementum ultricies interdum, at ipsum lobortis, imperdiet elit ad
+									pharetra. Wisi torquent diam libero elit, cursus odio penatibus morbi. Magna et diam maecenas sed vestibulum malesuada,
+									porttitor hymenaeos in elit montes justo, quam quis vel venenatis, nulla auctor vivamus, vitae montes pellentesque
+									in neque quis sed. Ac massa ullamcorper morbi, luctus in. Hendrerit sodales aliquet sed aenean, condimentum ultricies
+									vestibulum aliquet, libero augue imperdiet et mauris nam praesent, eu tellus ridiculus magna pellentesque vitae
+									fusce, rhoncus porta sociis. Sit vivamus, ante condimentum urna ea nibh sit, in lobortis, sit vel arcu diam. Magna
+									amet magna fermentum arcu ipsum, arcu massa. Lobortis orci quo est, cras luctus vitae ac aenean sed, aenean dui,
+									sit donec.
+								</p>
+							</div>
+							<div role="tabpanel" id="name-6-tab" aria-labelledby="name-6" hidden>
+								<h4>Tab Panel 3</h4>
+								<p>
+									Lorem ipsum dolor sit amet, velit lorem id, montes dignissim bibendum potenti mauris, quis in odio mauris animi. Eros interdum,
+									quis amet aperiam aliquet pellentesque. Quam convallis ultricies. Luctus ligula posuere erat dolor. Quisque tempor
+									ac elementum tortor iaculis, nunc mauris, nostra nulla felis euismod adipiscing sed vitae. Vivamus suscipit turpis,
+									lacus sed, id in et, cras accumsan viverra nec malesuada laoreet tristique, ipsum habitant primis dui quam nam eget.
+									Nulla et rutrum mauris, ad mollis non tellus id urna, rutrum diam sagittis quis elit ad nec, ridiculus curabitur
+									eleifend libero lorem tellus. Luctus hymenaeos interdum ut velit dui, habitasse metus elementum sodales ac volutpat
+									libero, ut quis per cumque.
+								</p>
+							</div>
+						</div>
+					</td>
+					<td>
+						<pre><code>&lt;!-- HTML SNIPPET --&gt;
+&lt;div class="tabs-bordered" id="tabs1"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div role="tablist"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;button role="tab" aria-selected="true" aria-controls="name-1-tab" id="name-1" tabindex="0"&gt;Tab Link 1&lt;/button&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;button role="tab" aria-selected="false" aria-controls="name-2-tab" id="name-2" tabindex="-1"&gt;Tab Link 2&lt;/button&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;button role="tab" aria-selected="false" aria-controls="name-3-tab" id="name-3" tabindex="-1"&gt;Tab Link 3&lt;/button&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div role="tabpanel" id="name-1-tab" aria-labelledby="name-1"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h4&gt;Tab Panel 1&lt;/h4&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tab Content 1.1
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/p&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tab Content 1.2
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/p&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div role="tabpanel" id="name-2-tab" aria-labelledby="name-2" hidden&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h4&gt;Tab Panel 2&lt;/h4&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tab Content 2
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/p&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div role="tabpanel" id="name-3-tab" aria-labelledby="name-3" hidden&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h4&gt;Tab Panel 3&lt;/h4&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tab Content 3
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/p&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&lt;/div&gt;
+
+/* JAVASCRIPT SNIPPET */
+new TabList('tabs1').init();
+</code></pre>
+					</td>
+				</tr>
+			</table>
+		</section>
+		<section>
+			<h3 class="border">Vertical Tabs</h3>
+			<table>
+				<tr>
+					<td>
+						<div class="tabs-vertical" id="tabs3">
+							<div role="tablist">
+								<button role="tab" aria-selected="true" aria-controls="name-7-tab" id="name-7" tabindex="0">Tab Link 1</button>
+								<button role="tab" aria-selected="false" aria-controls="name-8-tab" id="name-8" tabindex="-1">Tab Link 2</button>
+								<button role="tab" aria-selected="false" aria-controls="name-9-tab" id="name-9" tabindex="-1">Tab Link 3</button>
+							</div>
+							<div role="tabpanel" id="name-7-tab" aria-labelledby="name-7">
+								<h4>Tab Panel 1</h4>
+								<p>
+									Varius massa molestie quod leo lacus. Sed mi condimentum tincidunt molestie suspendisse, sapien pretium in nunc et, turpis
+									curabitur, ultrices nulla vel curabitur, orci vivamus sed dui aliquam diam. Ultricies et at aliquet amet, potenti
+									dapibus aptent maecenas pulvinar ac. Egestas imperdiet nulla a diam vel fringilla, integer eros velit habitasse
+									sit, eu tristique. Massa eleifend vel maecenas porta, ullamcorper nibh dolor. Pellentesque malesuada sagittis consectetuer
+									dictum enim, est condimentum, tempus curabitur quam orci sed nonummy, lorem accumsan facilisis vel, laoreet donec
+									ac sed libero suspendisse mauris.
+								</p>
+								<p>
+									Quisque in, ipsum cras. Mi odio nullam vitae non justo fringilla, ac habitasse ac, ut risus adipiscing urna suscipit vitae.
+									Rutrum felis. Odio vulputate dictum, quisque elementum ultricies interdum, at ipsum lobortis, imperdiet elit ad
+									pharetra. Wisi torquent diam libero elit, cursus odio penatibus morbi. Magna et diam maecenas sed vestibulum malesuada,
+									porttitor hymenaeos in elit montes justo, quam quis vel venenatis, nulla auctor vivamus, vitae montes pellentesque
+									in neque quis sed. Ac massa ullamcorper morbi, luctus in. Hendrerit sodales aliquet sed aenean, condimentum ultricies
+									vestibulum aliquet, libero augue imperdiet et mauris nam praesent, eu tellus ridiculus magna pellentesque vitae
+									fusce, rhoncus porta sociis. Sit vivamus, ante condimentum urna ea nibh sit, in lobortis, sit vel arcu diam. Magna
+									amet magna fermentum arcu ipsum, arcu massa. Lobortis orci quo est, cras luctus vitae ac aenean sed, aenean dui,
+									sit donec.
+								</p>
+							</div>
+							<div role="tabpanel" id="name-8-tab" aria-labelledby="name-8" hidden>
+								<h4>Tab Panel 2</h4>
+								<p>
+									Quisque in, ipsum cras. Mi odio nullam vitae non justo fringilla, ac habitasse ac, ut risus adipiscing urna suscipit vitae.
+									Rutrum felis. Odio vulputate dictum, quisque elementum ultricies interdum, at ipsum lobortis, imperdiet elit ad
+									pharetra. Wisi torquent diam libero elit, cursus odio penatibus morbi. Magna et diam maecenas sed vestibulum malesuada,
+									porttitor hymenaeos in elit montes justo, quam quis vel venenatis, nulla auctor vivamus, vitae montes pellentesque
+									in neque quis sed. Ac massa ullamcorper morbi, luctus in. Hendrerit sodales aliquet sed aenean, condimentum ultricies
+									vestibulum aliquet, libero augue imperdiet et mauris nam praesent, eu tellus ridiculus magna pellentesque vitae
+									fusce, rhoncus porta sociis. Sit vivamus, ante condimentum urna ea nibh sit, in lobortis, sit vel arcu diam. Magna
+									amet magna fermentum arcu ipsum, arcu massa. Lobortis orci quo est, cras luctus vitae ac aenean sed, aenean dui,
+									sit donec.
+								</p>
+							</div>
+							<div role="tabpanel" id="name-9-tab" aria-labelledby="name-9" hidden>
+								<h4>Tab Panel 3</h4>
+								<p>
+									Lorem ipsum dolor sit amet, velit lorem id, montes dignissim bibendum potenti mauris, quis in odio mauris animi. Eros interdum,
+									quis amet aperiam aliquet pellentesque. Quam convallis ultricies. Luctus ligula posuere erat dolor. Quisque tempor
+									ac elementum tortor iaculis, nunc mauris, nostra nulla felis euismod adipiscing sed vitae. Vivamus suscipit turpis,
+									lacus sed, id in et, cras accumsan viverra nec malesuada laoreet tristique, ipsum habitant primis dui quam nam eget.
+									Nulla et rutrum mauris, ad mollis non tellus id urna, rutrum diam sagittis quis elit ad nec, ridiculus curabitur
+									eleifend libero lorem tellus. Luctus hymenaeos interdum ut velit dui, habitasse metus elementum sodales ac volutpat
+									libero, ut quis per cumque.
+								</p>
+							</div>
+						</div>
+					</td>
+					<td>
+						<pre><code>&lt;!-- HTML SNIPPET --&gt;
+&lt;div class="tabs-vertical" id="tabs1"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div role="tablist"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;button role="tab" aria-selected="true" aria-controls="name-1-tab" id="name-1" tabindex="0"&gt;Tab Link 1&lt;/button&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;button role="tab" aria-selected="false" aria-controls="name-2-tab" id="name-2" tabindex="-1"&gt;Tab Link 2&lt;/button&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;button role="tab" aria-selected="false" aria-controls="name-3-tab" id="name-3" tabindex="-1"&gt;Tab Link 3&lt;/button&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div role="tabpanel" id="name-1-tab" aria-labelledby="name-1"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h4&gt;Tab Panel 1&lt;/h4&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tab Content 1.1
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/p&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tab Content 1.2
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/p&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div role="tabpanel" id="name-2-tab" aria-labelledby="name-2" hidden&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h4&gt;Tab Panel 2&lt;/h4&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tab Content 2
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/p&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div role="tabpanel" id="name-3-tab" aria-labelledby="name-3" hidden&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h4&gt;Tab Panel 3&lt;/h4&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tab Content 3
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/p&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&lt;/div&gt;
+
+/* JAVASCRIPT SNIPPET */
+new TabList('tabs1').init();
+</code></pre>
+					</td>
+				</tr>
+			</table>
+		</section>
+		<section>
+			<h3 class="border">Vertical Tabs w/border</h3>
+			<table>
+				<tr>
+					<td>
+						<div class="tabs-vertical-bordered" id="tabs4">
+							<div role="tablist">
+								<button role="tab" aria-selected="true" aria-controls="name-10-tab" id="name-10" tabindex="0">Tab Link 1</button>
+								<button role="tab" aria-selected="false" aria-controls="name-11-tab" id="name-11" tabindex="-1">Tab Link 2</button>
+								<button role="tab" aria-selected="false" aria-controls="name-12-tab" id="name-12" tabindex="-1">Tab Link 3</button>
+							</div>
+							<div role="tabpanel" id="name-10-tab" aria-labelledby="name-10">
+								<h4>Tab Panel 1</h4>
+								<p>
+									Varius massa molestie quod leo lacus. Sed mi condimentum tincidunt molestie suspendisse, sapien pretium in nunc et, turpis
+									curabitur, ultrices nulla vel curabitur, orci vivamus sed dui aliquam diam. Ultricies et at aliquet amet, potenti
+									dapibus aptent maecenas pulvinar ac. Egestas imperdiet nulla a diam vel fringilla, integer eros velit habitasse
+									sit, eu tristique. Massa eleifend vel maecenas porta, ullamcorper nibh dolor. Pellentesque malesuada sagittis consectetuer
+									dictum enim, est condimentum, tempus curabitur quam orci sed nonummy, lorem accumsan facilisis vel, laoreet donec
+									ac sed libero suspendisse mauris.
+								</p>
+								<p>
+									Quisque in, ipsum cras. Mi odio nullam vitae non justo fringilla, ac habitasse ac, ut risus adipiscing urna suscipit vitae.
+									Rutrum felis. Odio vulputate dictum, quisque elementum ultricies interdum, at ipsum lobortis, imperdiet elit ad
+									pharetra. Wisi torquent diam libero elit, cursus odio penatibus morbi. Magna et diam maecenas sed vestibulum malesuada,
+									porttitor hymenaeos in elit montes justo, quam quis vel venenatis, nulla auctor vivamus, vitae montes pellentesque
+									in neque quis sed. Ac massa ullamcorper morbi, luctus in. Hendrerit sodales aliquet sed aenean, condimentum ultricies
+									vestibulum aliquet, libero augue imperdiet et mauris nam praesent, eu tellus ridiculus magna pellentesque vitae
+									fusce, rhoncus porta sociis. Sit vivamus, ante condimentum urna ea nibh sit, in lobortis, sit vel arcu diam. Magna
+									amet magna fermentum arcu ipsum, arcu massa. Lobortis orci quo est, cras luctus vitae ac aenean sed, aenean dui,
+									sit donec.
+								</p>
+							</div>
+							<div role="tabpanel" id="name-11-tab" aria-labelledby="name-11" hidden>
+								<h4>Tab Panel 2</h4>
+								<p>
+									Quisque in, ipsum cras. Mi odio nullam vitae non justo fringilla, ac habitasse ac, ut risus adipiscing urna suscipit vitae.
+									Rutrum felis. Odio vulputate dictum, quisque elementum ultricies interdum, at ipsum lobortis, imperdiet elit ad
+									pharetra. Wisi torquent diam libero elit, cursus odio penatibus morbi. Magna et diam maecenas sed vestibulum malesuada,
+									porttitor hymenaeos in elit montes justo, quam quis vel venenatis, nulla auctor vivamus, vitae montes pellentesque
+									in neque quis sed. Ac massa ullamcorper morbi, luctus in. Hendrerit sodales aliquet sed aenean, condimentum ultricies
+									vestibulum aliquet, libero augue imperdiet et mauris nam praesent, eu tellus ridiculus magna pellentesque vitae
+									fusce, rhoncus porta sociis. Sit vivamus, ante condimentum urna ea nibh sit, in lobortis, sit vel arcu diam. Magna
+									amet magna fermentum arcu ipsum, arcu massa. Lobortis orci quo est, cras luctus vitae ac aenean sed, aenean dui,
+									sit donec.
+								</p>
+							</div>
+							<div role="tabpanel" id="name-12-tab" aria-labelledby="name-12" hidden>
+								<h4>Tab Panel 3</h4>
+								<p>
+									Lorem ipsum dolor sit amet, velit lorem id, montes dignissim bibendum potenti mauris, quis in odio mauris animi. Eros interdum,
+									quis amet aperiam aliquet pellentesque. Quam convallis ultricies. Luctus ligula posuere erat dolor. Quisque tempor
+									ac elementum tortor iaculis, nunc mauris, nostra nulla felis euismod adipiscing sed vitae. Vivamus suscipit turpis,
+									lacus sed, id in et, cras accumsan viverra nec malesuada laoreet tristique, ipsum habitant primis dui quam nam eget.
+									Nulla et rutrum mauris, ad mollis non tellus id urna, rutrum diam sagittis quis elit ad nec, ridiculus curabitur
+									eleifend libero lorem tellus. Luctus hymenaeos interdum ut velit dui, habitasse metus elementum sodales ac volutpat
+									libero, ut quis per cumque.
+								</p>
+							</div>
+						</div>
+					</td>
+					<td>
+						<pre><code>&lt;!-- HTML SNIPPET --&gt;
+&lt;div class="tabs-vertical-bordered" id="tabs1"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div role="tablist"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;button role="tab" aria-selected="true" aria-controls="name-1-tab" id="name-1" tabindex="0"&gt;Tab Link 1&lt;/button&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;button role="tab" aria-selected="false" aria-controls="name-2-tab" id="name-2" tabindex="-1"&gt;Tab Link 2&lt;/button&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;button role="tab" aria-selected="false" aria-controls="name-3-tab" id="name-3" tabindex="-1"&gt;Tab Link 3&lt;/button&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div role="tabpanel" id="name-1-tab" aria-labelledby="name-1"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h4&gt;Tab Panel 1&lt;/h4&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tab Content 1.1
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/p&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tab Content 1.2
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/p&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div role="tabpanel" id="name-2-tab" aria-labelledby="name-2" hidden&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h4&gt;Tab Panel 2&lt;/h4&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tab Content 2
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/p&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div role="tabpanel" id="name-3-tab" aria-labelledby="name-3" hidden&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h4&gt;Tab Panel 3&lt;/h4&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tab Content 3
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/p&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&lt;/div&gt;
+
+/* JAVASCRIPT SNIPPET */
+new TabList('tabs1').init();
+</code></pre>
+					</td>
+				</tr>
+			</table>
+		</section>
+		<script src="../dist/ux-styleguide.min.js"></script>
+		<script type="text/javascript">
+			new TabList('tabs1').init();
+			new TabList('tabs2').init();
+			new TabList('tabs3').init();
+			new TabList('tabs4').init();
+		</script>
+	</div>
+</body>
+
+</html>

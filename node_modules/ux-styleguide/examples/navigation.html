@@ -1,0 +1,831 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../dist/ux-styleguide.min.css">
+    <style>
+        body {
+            margin: 0;
+            background-color: #fff;
+            overflow-x: hidden;
+        }
+        
+        code,
+        pre {
+            padding: 0 3px 2px;
+            font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
+            font-size: 12px;
+            color: #333333;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            border-radius: 3px;
+            height: 100%;
+        }
+        
+        pre {
+            display: block;
+            padding: 9.5px;
+            margin: 0 0 10px;
+            font-size: 13px;
+            line-height: 20px;
+            word-break: break-all;
+            word-wrap: break-word;
+            white-space: pre;
+            white-space: pre-wrap;
+            background-color: #f5f5f5;
+            border: 1px solid #ccc;
+            border: 1px solid rgba(0, 0, 0, 0.15);
+            -webkit-border-radius: 4px;
+            -moz-border-radius: 4px;
+            border-radius: 4px;
+        }
+        
+        pre code {
+            padding: 0;
+            color: inherit;
+            white-space: pre;
+            white-space: pre-wrap;
+            background-color: transparent;
+            border: 0;
+        }
+        
+        section {
+            margin: auto;
+            padding: 10px;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 10px 20px;
+        }
+        
+        td {
+            width: 50%;
+            vertical-align: top;
+            height: 1px;
+        }
+
+        td.third {
+            width: 33.3%;
+        }
+
+        .display-only {
+            position: relative;
+            z-index: 0;
+        }
+		
+		.back-btn {
+			font-size: 20px !important;
+            margin-right: 5px !important;
+		}
+		
+		.back-btn > a {
+			color: #fff;
+			text-decoration: none;
+		}
+        
+		.content {
+			padding: 0 20px 0;
+		}
+    </style>
+</head>
+
+<body>
+
+    <div class="utility-header">
+        <label class="util-section">Welcome</label> User
+        <label class="util-section">Store#</label> 1234
+        <label class="util-section">Location</label> Atlanta, GA
+    </div>
+    <div class="header">
+        <div class="header-logo">
+            <i class="icon_homedepot"></i>
+        </div>
+        <div class="header-info">
+            <label class="product-info">UX Styleguide</label>
+            <!--<label class="user-info">User Name | Store #0000 | Atlanta, GA</label>-->
+        </div>
+        <div class="header-search">
+            <input type="search" placeholder="Search Here" />
+            <i class="icon_search"></i>
+        </div>
+        <div class="header-actions">
+            <div class="active">
+                <i class="icon_bell"></i>
+                Active Link
+            </div>
+            <div>
+                <i class="icon_cart"></i>
+                Nav Link
+            </div>
+            <div>
+                <i class="icon_exit-to-app"></i>
+                Nav Link
+            </div>
+            <div class="back-btn">
+                <a href="../index.html">Back</a>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <h1>Navigation</h1>
+        <section>
+            <h3 class="border">Utility Header (Optional)</h3>
+            <table>
+                <tr>
+                    <td colspan="2">
+                        <div class="utility-header display-only">
+                            <label class="util-section">Welcome</label> User
+                            <label class="util-section">Store#</label> 1234
+                            <label class="util-section">Location</label> Atlanta, GA
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>*NOTE:</b> Use only in conjunction with
+                        <b>Primary Header</b>.
+                        <br/>
+                        <b>*NOTE:</b> Each
+                        <b>
+                            <i>util-section</i>
+                        </b> followed by text will give the gray then white text.
+                    </td>
+                    <td>
+                        <pre><code>&lt;div class="utility-header"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;label class="util-section"&gt;Welcome&lt;/label&gt; User
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;label class="util-section"&gt;Store#&lt;/label&gt; 1234
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;label class="util-section"&gt;Location&lt;/label&gt; Atlanta, GA
+&lt;/div&gt;</code></pre>
+                    </td>
+                </tr>
+            </table>
+        </section>
+        <section>
+            <h3 class="border">Primary Header</h3>
+            <table>
+                <tr>
+                    <td colspan="2">
+                        <div class="header display-only">
+                            <div class="header-logo">
+                                <i class="icon_homedepot"></i>
+                            </div>
+                            <div class="header-info">
+                                <label class="product-info">Product Name</label>
+                                <label class="user-info">User Name | Store #0000 | Atlanta, GA</label>
+                            </div>
+                            <div class="header-search">
+                                <input type="search" placeholder="Search Here" />
+                                <i class="icon_search"></i>
+                            </div>
+                            <div class="header-actions">
+                                <div class="active">
+                                    <i class="icon_bell"></i>
+                                    Active Link
+                                </div>
+                                <div>
+                                    <i class="icon_cart"></i>
+                                    Nav Link
+                                </div>
+                                <div>
+                                    <i class="icon_exit-to-app"></i>
+                                    Nav Link
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>*NOTE:</b>
+                        <b>
+                            <i>header-info</i>
+                        </b> section contains:
+                        <b>
+                            <i>product-info</i>
+                        </b> which is Product Name and
+                        <b>
+                            <i>user-info</i>
+                        </b> which can contain any secondary information, or not included at all.
+                        <br/>
+                        <b>*NOTE:</b>
+                        <b>
+                            <i>header-actions</i>
+                        </b> section can contain any icon (up to 6) and corresponding link name text.
+                        <br/>
+                        <b>*NOTE:</b> Requires a div with
+                        <b>
+                            <i>content</i>
+                        </b> section immediately after to ensure proper positioning and scrolling.
+                        <br/>
+                        <b>*NOTE:</b> On mobile:
+                        <b>
+                            <i>header-actions</i>
+                        </b> will be shifted and fixed to bottom of the screen.
+                    </td>
+                    <td>
+                        <pre><code>&lt;div class="header"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="header-logo"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;i class="icon_homedepot"&gt;&lt;/i&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="header-info"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label class="product-info"&gt;Product Name&lt;/label&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label class="user-info"&gt;User Name | Store #0000 | Atlanta, GA&lt;/label&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="header-search"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="search" placeholder="Search Here"/&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;i class="icon_search"&gt;&lt;/i&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="header-actions"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="active"&gt;&lt;i class="icon_bell"&gt;&lt;/i&gt;Active Link&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&gt;&lt;i class="icon_cart"&gt;&lt;/i&gt;Nav Link&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&gt;&lt;i class="icon_exit-to-app"&gt;&lt;/i&gt;Nav Link&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="content"&gt;&lt;/div&gt;</code></pre>
+                    </td>
+                </tr>
+            </table>
+        </section>
+        <section>
+            <h3 class="border">Header without Search</h3>
+            <table>
+                <tr>
+                    <td colspan="2">
+                        <div class="header display-only">
+                            <div class="header-logo">
+                                <i class="icon_homedepot"></i>
+                            </div>
+                            <div class="header-info">
+                                <label class="product-info">Product Name</label>
+                                <label class="user-info">User Name | Store #0000 | Atlanta, GA</label>
+                            </div>
+                            <div class="header-search">
+                            </div>
+                            <div class="header-actions">
+                                <div class="active">
+                                    <i class="icon_bell"></i>Active Link</div>
+                                <div>
+                                    <i class="icon_cart"></i>Nav Link</div>
+                                <div>
+                                    <i class="icon_exit-to-app"></i>Nav Link</div>
+                            </div>
+                        </div>
+                        <div class="content"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>*NOTE: </b>Need to keep
+                        <b>
+                            <i>header-search</i>
+                        </b> section but remove contents.
+                    </td>
+                    <td>
+                        <pre><code>&lt;div class="header"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="header-logo"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;i class="icon_homedepot"&gt;&lt;/i&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="header-info"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label class="product-info"&gt;Product Name&lt;/label&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label class="user-info"&gt;User Name | Store #0000 | Atlanta, GA&lt;/label&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="header-search"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="header-actions"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="active"&gt;&lt;i class="icon_bell"&gt;&lt;/i&gt;Active Link&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&gt;&lt;i class="icon_cart"&gt;&lt;/i&gt;Nav Link&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&gt;&lt;i class="icon_exit-to-app"&gt;&lt;/i&gt;Nav Link&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="content"&gt;&lt;/div&gt;</code></pre>
+                    </td>
+                </tr>
+            </table>
+        </section>
+        <section>
+            <h3 class="border">Header without Actions</h3>
+            <table>
+                <tr>
+                    <td colspan="2">
+                        <div class="header display-only">
+                            <div class="header-logo">
+                                <i class="icon_homedepot"></i>
+                            </div>
+                            <div class="header-info">
+                                <label class="product-info">Product Name</label>
+                                <label class="user-info">User Name | Store #0000 | Atlanta, GA</label>
+                            </div>
+                            <div class="header-search">
+                                <input type="search" placeholder="Search Here" />
+                                <i class="icon_search"></i>
+                            </div>
+                            <div class="header-actions">
+                            </div>
+                        </div>
+                        <div class="content"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>*NOTE:</b> Need to keep
+                        <b>
+                            <i>header-actions</i>
+                        </b> section but remove contents.
+                    </td>
+                    <td>
+                        <pre><code>&lt;div class="header"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="header-logo"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;i class="icon_homedepot"&gt;&lt;/i&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="header-info"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label class="product-info"&gt;Product Name&lt;/label&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label class="user-info"&gt;User Name | Store #0000 | Atlanta, GA&lt;/label&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="header-search"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="search" placeholder="Search Here"/&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;i class="icon_search"&gt;&lt;/i&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="header-actions"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="content"&gt;&lt;/div&gt;</code></pre>
+                    </td>
+                </tr>
+            </table>
+        </section>
+        <section>
+            <h3 class="border">BREADCRUMBS</h3>
+            <table>
+                <tr>
+                    <td>
+                        <h4>Default</h4>
+                        <div class="breadcrumb-nav">
+                            <span class="breadcrumb">Page 1</span>
+                            <span class="breadcrumb">Page 2</span>
+                            <span class="breadcrumb">Page 3</span>
+                            <span class="breadcrumb active">Current Page</span>
+                        </div>
+                    </td>
+                    <td>
+                        <pre><code>&lt;div class="breadcrumb-nav"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="breadcrumb"&gt;Page 1&lt;/span&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="breadcrumb"&gt;Page 2&lt;/span&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="breadcrumb"&gt;Page 3&lt;/span&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="breadcrumb active"&gt;Current Page&lt;/span&gt;
+&lt;/div&gt;</code></pre>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h4>With Back Button (Optional)</h4>
+                        <div class="breadcrumb-nav">
+                            <span class="breadcrumb back">Back</span>
+                            <span class="breadcrumb">Page 1</span>
+                            <span class="breadcrumb">Page 2</span>
+                            <span class="breadcrumb">Page 3</span>
+                            <span class="breadcrumb active">Current Page</span>
+                        </div>
+                    </td>
+                    <td>
+                        <pre><code>&lt;div class="breadcrumb-nav"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="breadcrumb back"&gt;Back&lt;/span&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="breadcrumb"&gt;Page 1&lt;/span&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="breadcrumb"&gt;Page 2&lt;/span&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="breadcrumb"&gt;Page 3&lt;/span&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="breadcrumb active"&gt;Current Page&lt;/span&gt;
+&lt;/div&gt;</code></pre>
+                    </td>
+                </tr>
+            </table>
+        </section>
+        <section>
+            <h3 class="border">Pagination</h3>
+            <table>
+                <tr>
+                    <td colspan="3">
+                        <h4 style="margin-bottom:0;">Default</h4>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="third">
+                        <div class="pagination-nav" id="pagination1">
+                            <span class="page left"></span>
+                            <span class="page">1</span>
+                            <span class="page">2</span>
+                            <span class="page">3</span>
+                            <span class="page right"></span>
+                        </div>
+                        Large
+                    </td>
+                    <td class="third">
+                        <div class="pagination-nav md" id="pagination2">
+                            <span class="page left"></span>
+                            <span class="page">1</span>
+                            <span class="page">2</span>
+                            <span class="page">3</span>
+                            <span class="page">4</span>
+                            <span class="page">5</span>
+                            <span class="page">6</span>
+                            <span class="page right"></span>
+                        </div>
+                        Medium
+                    </td>
+                    <td class="third">
+                        <div class="pagination-nav sm" id="pagination3">
+                            <span class="page left"></span>
+                            <span class="page">1</span>
+                            <span class="page">2</span>
+                            <span class="page">3</span>
+                            <span class="page">4</span>
+                            <span class="page">5</span>
+                            <span class="page right"></span>
+                        </div>
+                        Small
+                    </td>
+                </tr>
+                <tr>
+                    <td class="third">
+                        <pre><code>&lt;div class="pagination-nav" id="pagination1"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="page left"&gt;&lt;/span&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="page"&gt;01&lt;/span&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="page"&gt;02&lt;/span&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="page"&gt;03&lt;/span&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="page right"&gt;&lt;/span&gt;
+&lt;/div&gt;</code></pre>
+                    </td>
+                    <td class="third">
+                        <pre><code>&lt;div class="pagination-nav md" id="pagination2"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="page left"&gt;&lt;/span&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="page"&gt;01&lt;/span&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="page"&gt;02&lt;/span&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="page"&gt;03&lt;/span&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="page"&gt;04&lt;/span&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="page"&gt;05&lt;/span&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="page"&gt;06&lt;/span&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="page right"&gt;&lt;/span&gt;
+&lt;/div&gt;</code></pre>
+                    </td>
+                    <td class="third">
+                        <pre><code>&lt;div class="pagination-nav sm" id="pagination3"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="page left"&gt;&lt;/span&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="page"&gt;01&lt;/span&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="page"&gt;02&lt;/span&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="page"&gt;03&lt;/span&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="page"&gt;04&lt;/span&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="page"&gt;05&lt;/span&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="page right"&gt;&lt;/span&gt;
+&lt;/div&gt;</code></pre>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <h4 style="margin-bottom:0;">Compact</h4>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="third">
+                        <div class="pagination-nav compact" id="pagination4">
+                            <span class="page left"></span>
+                            <span class="page right"></span>
+                        </div>
+                        Large
+                    </td>
+                    <td class="third">
+                        <div class="pagination-nav compact md" id="pagination5">
+                            <span class="page left"></span>
+                            <span class="page right"></span>
+                        </div>
+                        Medium
+                    </td>
+                    <td class="third">
+                        <div class="pagination-nav compact sm" id="pagination6">
+                            <span class="page left"></span>
+                            <span class="page right"></span>
+                        </div>
+                        Small
+                    </td>
+                </tr>
+                <tr>
+                    <td class="third">
+                        <pre><code>&lt;div class="pagination-nav compact" id="pagination4"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="page left"&gt;&lt;/span&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="page right"&gt;&lt;/span&gt;
+&lt;/div&gt;</code></pre>
+                    </td>
+                    <td class="third">
+                        <pre><code>&lt;div class="pagination-nav compact md" id="pagination5"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="page left"&gt;&lt;/span&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="page right"&gt;&lt;/span&gt;
+&lt;/div&gt;</code></pre>
+                    </td>
+                    <td class="third">
+                        <pre><code>&lt;div class="pagination-nav compact sm" id="pagination6"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="page left"&gt;&lt;/span&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="page right"&gt;&lt;/span&gt;
+&lt;/div&gt;</code></pre>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="third">
+                        <pre><code>Pagination.init("pagination4", 4, 1, paginationCallback);</code></pre>
+                    </td>
+                    <td class="third">
+                        <pre><code>Pagination.init("pagination5", 8, 1, paginationCallback);</code></pre>
+                    </td>
+                    <td class="third">
+                        <pre><code>Pagination.init("pagination6", 7, 1, paginationCallback);</code></pre>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <h4 style="margin-bottom:0;">JavaScript</h4>
+                        <span>
+                            <h5>DEFINITION:</h5>
+                            <pre><code>Pagination.init(PAGINATION_NAV_ID, TOTAL_NUMBER_PAGES, PAGE_TO_START, PAGING_CALLBACK);</code></pre>
+                        </span>
+                        <b>*NOTE:</b> PAGING_CALLBACK will receive current page number selected.
+                        <br>
+                        <span>
+                            <h5>EXAMPLE:</h5>
+                            <pre><code>Pagination.init("pagination1", 7, 1, pagingCallback);</code></pre>
+                        </span>
+                    </td>
+                </tr>
+            </table>
+        </section>
+        <section>
+            <h3 class="border">STEPPER NAVIGATION</h3>
+            <table>
+                <tr>
+                    <td colspan="2">
+                        <div class="stepper">
+                            <div class="step completed">
+                                <div class="step-circle">
+                                    <span>1</span>
+                                </div>
+                                <div class="step-title">Completed Step</div>
+                            </div>
+                            <div class="step-bar"></div>
+                            <div class="step completed editable green">
+                                <div class="step-circle">
+                                    <span>2</span>
+                                </div>
+                                <div class="step-title">Editable Step
+                                    <div class="step-optional">w/Sub Text</div>
+                                </div>
+                            </div>
+                            <div class="step-bar"></div>
+                            <div class="step completed error">
+                                <div class="step-circle">
+                                    <span>3</span>
+                                </div>
+                                <div class="step-title">Error Step
+                                    <div class="step-optional">w/Sub Text</div>
+                                </div>
+                            </div>
+                            <div class="step-bar"></div>
+                            <div class="step active">
+                                <div class="step-circle">
+                                    <span>4</span>
+                                </div>
+                                <div class="step-title">Current Step
+                                </div>
+                            </div>
+                            <div class="step-bar"></div>
+                            <div class="step">
+                                <div class="step-circle">
+                                    <i class="icon_cart"></i>
+                                </div>
+                                <div class="step-title">Step w/ Custon Icon
+                                </div>
+                            </div>
+                            <div class="step-bar"></div>
+                            <div class="step">
+                                <div class="step-circle">
+                                    <span>6</span>
+                                </div>
+                                <div class="step-title">Plain Text</div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>*NOTE:</b>
+                        <i>completed</i> step overwrites circle with checkmark
+                        <br/>
+                        <b>*NOTE:</b>
+                        <i>editable</i> step requires
+                        <i>completed</i> class and overwrites circle with pencil
+                        <br/>
+                        <b>*NOTE:</b>
+                        <i>error</i> step requires
+                        <i>completed</i> class and overwrites circle with exclamation mark
+                        <br/>
+                        <b>*NOTE:</b>
+                        <i>green</i> class can be applied to
+                        <i>step</i> class to show green color
+                        <br/>
+                        <b>*NOTE:</b>
+                        <i>active</i> signifies current step in process
+                        <br/>
+                        <b>*NOTE:</b>
+                        <i>step-bar</i> is required after every
+                        <i>step</i> except for last one
+                    </td>
+                    <td>
+                        <pre><code>&lt;div class="stepper"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="step completed"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="step-circle"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span&gt;1&lt;/span&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="step-title"&gt;Completed Step&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="step-bar"&gt;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="step completed editable green"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="step-circle"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span&gt;2&lt;/span&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="step-title"&gt;Editable Step
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="step-optional"&gt;w/Sub Text&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="step-bar"&gt;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="step completed error"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="step-circle"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span&gt;3&lt;/span&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="step-title"&gt;Error Step
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="step-optional"&gt;w/Sub Text&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="step-bar"&gt;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="step active"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="step-circle"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span&gt;4&lt;/span&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="step-title"&gt;Current Step
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="step-bar"&gt;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="step"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="step-circle"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;i class="icon_cart"&gt;&lt;/i&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="step-title"&gt;Step w/ Custon Icon
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="step-bar"&gt;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="step"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="step-circle"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span&gt;6&lt;/span&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="step-title"&gt;Plain Text&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                    </td>
+                </tr>
+            </table>
+        </section>
+        <section>
+            <h3 class="border">STEPPER NAVIGATION VERTICAL</h3>
+            <table>
+                <tr>
+                    <td colspan="2">
+                        <div class="stepper vertical">
+                            <div class="step completed">
+                                <div class="step-circle">
+                                    <span>1</span>
+                                </div>
+                                <div class="step-title">Completed Step</div>
+                            </div>
+                            <div class="step-bar">
+                            </div>
+                            <div class="step completed editable green">
+                                <div class="step-circle">
+                                    <span>2</span>
+                                </div>
+                                <div class="step-title">Editable Step
+                                    <div class="step-optional">w/Sub Text</div>
+                                </div>
+                            </div>
+                            <div class="step-bar"></div>
+                            <div class="step completed error">
+                                <div class="step-circle">
+                                    <span>3</span>
+                                </div>
+                                <div class="step-title">Error Step
+                                    <div class="step-optional">w/Sub Text</div>
+                                </div>
+                            </div>
+                            <div class="step-bar"></div>
+                            <div class="step active">
+                                <div class="step-circle">
+                                    <span>4</span>
+                                </div>
+                                <div class="step-title">Current Step
+                                </div>
+                            </div>
+                            <div class="step-bar content">
+                                <b>*NOTE:</b>
+                                <i>content</i> class can be added to
+                                <i>step-bar</i> class and then markup can be put within the div to display content
+                                <br/>
+                            </div>
+                            <div class="step">
+                                <div class="step-circle">
+                                    <i class="icon_cart"></i>
+                                </div>
+                                <div class="step-title">Step w/ Custon Icon
+                                </div>
+                            </div>
+                            <div class="step-bar"></div>
+                            <div class="step">
+                                <div class="step-circle">
+                                    <span>6</span>
+                                </div>
+                                <div class="step-title">Plain Text</div>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <pre><code>&lt;div class="stepper vertical"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="step completed"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="step-circle"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span&gt;1&lt;/span&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="step-title"&gt;Completed Step&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="step-bar"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="step completed editable green"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="step-circle"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span&gt;2&lt;/span&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="step-title"&gt;Editable Step
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="step-optional"&gt;w/Sub Text&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="step-bar"&gt;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="step completed error"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="step-circle"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span&gt;3&lt;/span&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="step-title"&gt;Error Step
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="step-optional"&gt;w/Sub Text&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="step-bar"&gt;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="step active"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="step-circle"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span&gt;4&lt;/span&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="step-title"&gt;Current Step
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="step-bar content"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;this is some step content let's see what happens&lt;/p&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;this is some step content let's see what happens&lt;/p&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="step"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="step-circle"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;i class="icon_cart"&gt;&lt;/i&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="step-title"&gt;Step w/ Custon Icon
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="step-bar"&gt;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="step"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="step-circle"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span&gt;6&lt;/span&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="step-title"&gt;Plain Text&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                    </td>
+                </tr>
+            </table>
+        </section>
+    </div>
+
+    <script src="../dist/ux-styleguide.min.js"></script>
+    <script type="text/javascript">
+
+    function paginationCallback(currentPage) {
+        console.log("current page", currentPage);
+    }
+
+    Pagination.init("pagination1", 4, 1, paginationCallback);
+    Pagination.init("pagination2", 8, 1, paginationCallback);
+    Pagination.init("pagination3", 7, 3, paginationCallback);
+    Pagination.init("pagination4", 4, 1, paginationCallback);
+    Pagination.init("pagination5", 8, 1, paginationCallback);
+    Pagination.init("pagination6", 7, 1, paginationCallback);
+
+    </script>
+</body>
+
+</html>

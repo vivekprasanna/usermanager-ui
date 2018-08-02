@@ -1,0 +1,477 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../dist/ux-styleguide.min.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8" />
+    <title>UX Styleguide - Layouts</title>
+    <style>
+        
+        code,
+        pre {
+            padding: 0 3px 2px;
+            font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
+            font-size: 12px;
+            color: #333333;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            border-radius: 3px;
+            height: 100%;
+        }
+        
+        pre {
+            display: block;
+            padding: 9.5px;
+            margin: 0 0 10px;
+            font-size: 13px;
+            line-height: 20px;
+            word-break: break-all;
+            word-wrap: break-word;
+            white-space: pre;
+            white-space: pre-wrap;
+            background-color: #f5f5f5;
+            border: 1px solid #ccc;
+            border: 1px solid rgba(0, 0, 0, 0.15);
+            -webkit-border-radius: 4px;
+            -moz-border-radius: 4px;
+            border-radius: 4px;
+        }
+        
+        pre code {
+            padding: 0;
+            color: inherit;
+            white-space: pre;
+            white-space: pre-wrap;
+            background-color: transparent;
+            border: 0;
+        }
+        
+        section {
+            margin: auto;
+            padding: 10px;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 10px 20px;
+        }
+        
+        td {
+            width: 50%;
+            vertical-align: top;
+            height: 1px;
+        }
+        
+        fieldset {
+            height: 100%;
+        }
+		
+		.back-btn {
+			font-size: 20px !important;
+            margin-right: 5px !important;
+		}
+		
+		.back-btn > a {
+			color: #fff;
+			text-decoration: none;
+		}
+
+		.content {
+			padding: 0 20px 0;
+		}
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="header-logo">
+            <i class="icon_homedepot"></i>
+        </div>
+        <div class="header-info">
+            <label class="product-info">UX Styleguide</label>
+            <label class="user-info">Components and Patterns provided by Home Depot UX</label>
+        </div>
+        <div class="header-search">
+        </div>
+        <div class="header-actions">
+            <div class="back-btn">
+                <a href="../index.html">Back</a>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <h1>Layouts</h1>
+        <section>
+            <h3 class="border">ACCORDION (SINGLE OPENED)</h3>
+            <table>
+                <tr>
+                    <td>
+                        <div class="accordion" role="tablist" id="accordion1">
+                            <h3 id="heading1" class="accordion-heading" role="tab" aria-controls="panel1" aria-selected="true" tabindex="0">Accordion Heading 1</h3>
+                            <div id="panel1" class="accordion-panel" role="tabpanel" aria-labelledby="heading1" aria-expanded="true">
+                                <h4>Accordion Content 1</h4>
+                                <p>Quis libero, non dignissim, nisl maecenas vestibulum in rutrum aenean dolor, mi lacus consectetuer
+                                    neque tincidunt hendrerit, in urna velit at nec donec dignissim. Est tristique in eleifend
+                                    vestibulum, auctor risus, mi amet. Facilisis ultrices turpis dis sed rhoncus lectus.
+                                    Volutpat a proin pede magna arcu pulvinar, sit vel. Egestas erat, lectus semper, rhoncus
+                                    metus rutrum ultrices vitae, aliquet vestibulum ante volutpat. Mauris condimentum suspendisse
+                                    erat faucibus, nunc ornare vivamus, convallis sed pharetra est est, phasellus malesuada
+                                    mus bibendum dis. Justo euismod fermentum eu, convallis inceptos viverra ultrices amet
+                                    sed, consectetuer ridiculus lectus bibendum ut sit erat, aenean nibh augue egestas donec
+                                    dui, feugiat iaculis rutrum dui sociis.</p>
+                            </div>
+                            <h3 id="heading2" class="accordion-heading" role="tab" aria-controls="panel2" aria-selected="false" tabindex="-1">Accordion Heading 2</h3>
+                            <div id="panel2" class="accordion-panel" role="tabpanel" aria-labelledby="heading2" aria-expanded="false">
+                                <h4>Accordion Content 2</h4>
+                                <p>In aliquet lacinia, gravida id non egestas leo fermentum, eu erat mauris, mauris id ac. Curae
+                                    dolor eu rhoncus metus fringilla, nisl velit amet. Auctor at, amet libero lacus, id parturient
+                                    cras, curae quasi nunc, mauris donec cras tristique consequat cursus aliquam. Tortor
+                                    vitae venenatis, lacus justo elementum mattis aliquam. Diam ut iure adipiscing fusce
+                                    lorem vestibulum, et eget deserunt nunc non nunc. Ut orci erat adipiscing metus vel,
+                                    blandit posuere luctus pretium, nisl dui eu. Quis morbi integer, ut vestibulum aenean
+                                    libero, sit aut donec diam vehicula sodales, aliquam commodo volutpat dui nulla justo.
+                                    Suscipit ipsum mauris aliquam, eget ut sit, id fugit voluptate lacus, eleifend molestie
+                                    fermentum. A eu commodo, proin libero nam arcu praesent nullam, id donec nullam sit a,
+                                    illum magna nec. Ut suspendisse condimentum porttitor dapibus, leo id risus mi vestibulum
+                                    sit.
+                                </p>
+                            </div>
+                            <h3 id="heading3" class="accordion-heading" role="tab" aria-controls="panel3" aria-selected="false" tabindex="-1">Accordion Heading 3</h3>
+                            <div id="panel3" class="accordion-panel" role="tabpanel" aria-labelledby="heading3" aria-expanded="false">
+                                <h4>Accordion Content 3</h4>
+                                <p>Vitae ut, ultrices doloribus parturient leo sed, velit pede ultrices, ligula venenatis justo.
+                                    Vitae suspendisse faucibus consectetuer id aliquet id, posuere nec cras, vel gravida,
+                                    interdum nisl eleifend. Elit sed. Tristique maecenas, quam wisi vel at euismod, ornare
+                                    tempus mauris in diam a auctor, lectus nunc lectus aliquam, occaecati a ornare luctus
+                                    adipiscing vivamus elit. Eu lacus sed, sed tellus natoque temporibus vitae, quam aliquet,
+                                    suspendisse ullamcorper integer eros libero sit.</p>
+                            </div>
+                            <h3 id="heading4" class="accordion-heading" role="tab" aria-controls="panel4" aria-selected="false" tabindex="-1">Accordion Heading 4</h3>
+                            <div id="panel4" class="accordion-panel" role="tabpanel" aria-labelledby="heading4" aria-expanded="false">
+                                <h4>Accordion Content 4</h4>
+                                <p>Suspendisse aliquam non nibh, et ante vel, deserunt cursus leo. Aliquam praesent quis, praesent
+                                    sed wisi in ligula, vel vel montes, sollicitudin nisl lorem eget officiis, vehicula tincidunt
+                                    gravida in nunc elit sit. Rutrum massa a lorem semper potenti, in arcu nam faucibus.
+                                    Neque at, erat erat convallis congue vel maecenas torquent, urna ante lectus vitae montes
+                                    fermentum, tincidunt metus mauris amet arcu arcu sed. Duis vestibulum vitae vitae nullam
+                                    nam eu, lacus pellentesque. Aliquet ac ante vitae malesuada et per, aliquam libero aliquam,
+                                    auctor risus dictum volutpat nibh, vivamus suscipit ut vulputate dapibus ipsum enim.
+                                    Nam morbi, pellentesque lobortis sed adipiscing molestie wisi, nibh pede egestas. Arcu
+                                    magna sem, ea elit et at nec nunc pretium, congue ut condimentum sed risus, amet felis
+                                    elit malesuada scelerisque magnis. Augue vivamus proin volutpat, nunc non ipsum. Aliquam
+                                    fringilla, rhoncus maecenas tortor cum aliquam justo congue.</p>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <pre><code>&lt;!-- HTML SNIPPET --&gt;
+&lt;div class="accordion" role="tablist" id="accordion1"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;h3 id="heading1" class="accordion-heading" role="tab" aria-controls="panel1" aria-selected="true" tabindex="0"&gt;Accordion Heading 1&lt;/h3&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div id="panel1" class="accordion-panel" role="tabpanel" aria-labelledby="heading1" aria-expanded="true"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Accordion Content 1&lt;/p&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;h3 id="heading2" class="accordion-heading" role="tab" aria-controls="panel2" aria-selected="false" tabindex="-1"&gt;Accordion Heading 2&lt;/h3&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div id="panel2" class="accordion-panel" role="tabpanel" aria-labelledby="heading2" aria-expanded="false"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Accordion Content 2&lt;/p&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;h3 id="heading3" class="accordion-heading" role="tab" aria-controls="panel3" aria-selected="false" tabindex="-1"&gt;Accordion Heading 3&lt;/h3&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div id="panel3" class="accordion-panel" role="tabpanel" aria-labelledby="heading3" aria-expanded="false"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Accordion Content 3&lt;/p&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;h3 id="heading4" class="accordion-heading" role="tab" aria-controls="panel4" aria-selected="false" tabindex="-1"&gt;Accordion Heading 4&lt;/h3&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div id="panel4" class="accordion-panel" role="tabpanel" aria-labelledby="heading4" aria-expanded="false"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Accordion Content 4&lt;/p&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&lt;/div&gt;
+
+/* JAVASCRIPT SNIPPET */
+new Accordion('accordion1').init();
+</code></pre>
+                    </td>
+                </tr>
+            </table>
+        </section>
+        <section>
+            <h3 class="border">ACCORDION (MULTIPLE OPENED)</h3>
+            <table>
+                <tr>
+                    <td>
+                        <div class="accordion" role="tablist" multiselect="true" id="accordion2">
+                            <h3 id="heading5" class="accordion-heading" role="tab" aria-controls="panel5" aria-selected="false" tabindex="0">Accordion Heading 5</h3>
+                            <div id="panel5" class="accordion-panel" role="tabpanel" aria-labelledby="heading5" aria-expanded="false">
+                                <h4>Accordion Content 1</h4>
+                                <p>Quis libero, non dignissim, nisl maecenas vestibulum in rutrum aenean dolor, mi lacus consectetuer
+                                    neque tincidunt hendrerit, in urna velit at nec donec dignissim. Est tristique in eleifend
+                                    vestibulum, auctor risus, mi amet. Facilisis ultrices turpis dis sed rhoncus lectus.
+                                    Volutpat a proin pede magna arcu pulvinar, sit vel. Egestas erat, lectus semper, rhoncus
+                                    metus rutrum ultrices vitae, aliquet vestibulum ante volutpat. Mauris condimentum suspendisse
+                                    erat faucibus, nunc ornare vivamus, convallis sed pharetra est est, phasellus malesuada
+                                    mus bibendum dis. Justo euismod fermentum eu, convallis inceptos viverra ultrices amet
+                                    sed, consectetuer ridiculus lectus bibendum ut sit erat, aenean nibh augue egestas donec
+                                    dui, feugiat iaculis rutrum dui sociis.</p>
+                            </div>
+                            <h3 id="heading6" class="accordion-heading" role="tab" aria-controls="panel6" aria-selected="false" tabindex="-1">Accordion Heading 6</h3>
+                            <div id="panel6" class="accordion-panel" role="tabpanel" aria-labelledby="heading6" aria-expanded="false">
+                                <h4>Accordion Content 2</h4>
+                                <p>In aliquet lacinia, gravida id non egestas leo fermentum, eu erat mauris, mauris id ac. Curae
+                                    dolor eu rhoncus metus fringilla, nisl velit amet. Auctor at, amet libero lacus, id parturient
+                                    cras, curae quasi nunc, mauris donec cras tristique consequat cursus aliquam. Tortor
+                                    vitae venenatis, lacus justo elementum mattis aliquam. Diam ut iure adipiscing fusce
+                                    lorem vestibulum, et eget deserunt nunc non nunc. Ut orci erat adipiscing metus vel,
+                                    blandit posuere luctus pretium, nisl dui eu. Quis morbi integer, ut vestibulum aenean
+                                    libero, sit aut donec diam vehicula sodales, aliquam commodo volutpat dui nulla justo.
+                                    Suscipit ipsum mauris aliquam, eget ut sit, id fugit voluptate lacus, eleifend molestie
+                                    fermentum. A eu commodo, proin libero nam arcu praesent nullam, id donec nullam sit a,
+                                    illum magna nec. Ut suspendisse condimentum porttitor dapibus, leo id risus mi vestibulum
+                                    sit.
+                                </p>
+                            </div>
+                            <h3 id="heading7" class="accordion-heading" role="tab" aria-controls="panel7" aria-selected="false" tabindex="-1">Accordion Heading 7</h3>
+                            <div id="panel7" class="accordion-panel" role="tabpanel" aria-labelledby="heading7" aria-expanded="false">
+                                <h4>Accordion Content 3</h4>
+                                <p>Vitae ut, ultrices doloribus parturient leo sed, velit pede ultrices, ligula venenatis justo.
+                                    Vitae suspendisse faucibus consectetuer id aliquet id, posuere nec cras, vel gravida,
+                                    interdum nisl eleifend. Elit sed. Tristique maecenas, quam wisi vel at euismod, ornare
+                                    tempus mauris in diam a auctor, lectus nunc lectus aliquam, occaecati a ornare luctus
+                                    adipiscing vivamus elit. Eu lacus sed, sed tellus natoque temporibus vitae, quam aliquet,
+                                    suspendisse ullamcorper integer eros libero sit.</p>
+                            </div>
+                            <h3 id="heading8" class="accordion-heading" role="tab" aria-controls="panel8" aria-selected="false" tabindex="-1">Accordion Heading 8</h3>
+                            <div id="panel8" class="accordion-panel" role="tabpanel" aria-labelledby="heading8" aria-expanded="false">
+                                <h4>Accordion Content 4</h4>
+                                <p>Suspendisse aliquam non nibh, et ante vel, deserunt cursus leo. Aliquam praesent quis, praesent
+                                    sed wisi in ligula, vel vel montes, sollicitudin nisl lorem eget officiis, vehicula tincidunt
+                                    gravida in nunc elit sit. Rutrum massa a lorem semper potenti, in arcu nam faucibus.
+                                    Neque at, erat erat convallis congue vel maecenas torquent, urna ante lectus vitae montes
+                                    fermentum, tincidunt metus mauris amet arcu arcu sed. Duis vestibulum vitae vitae nullam
+                                    nam eu, lacus pellentesque. Aliquet ac ante vitae malesuada et per, aliquam libero aliquam,
+                                    auctor risus dictum volutpat nibh, vivamus suscipit ut vulputate dapibus ipsum enim.
+                                    Nam morbi, pellentesque lobortis sed adipiscing molestie wisi, nibh pede egestas. Arcu
+                                    magna sem, ea elit et at nec nunc pretium, congue ut condimentum sed risus, amet felis
+                                    elit malesuada scelerisque magnis. Augue vivamus proin volutpat, nunc non ipsum. Aliquam
+                                    fringilla, rhoncus maecenas tortor cum aliquam justo congue.</p>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <pre><code>&lt;!-- HTML SNIPPET --&gt;
+&lt;div class="accordion" role="tablist" id="accordion1" multiselect="true"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;h3 id="heading1" class="accordion-heading" role="tab" aria-controls="panel1" aria-selected="true" tabindex="0"&gt;Accordion Heading 1&lt;/h3&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div id="panel1" class="accordion-panel" role="tabpanel" aria-labelledby="heading1" aria-expanded="true"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Accordion Content 1&lt;/p&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;h3 id="heading2" class="accordion-heading" role="tab" aria-controls="panel2" aria-selected="false" tabindex="-1"&gt;Accordion Heading 2&lt;/h3&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div id="panel2" class="accordion-panel" role="tabpanel" aria-labelledby="heading2" aria-expanded="false"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Accordion Content 2&lt;/p&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;h3 id="heading3" class="accordion-heading" role="tab" aria-controls="panel3" aria-selected="false" tabindex="-1"&gt;Accordion Heading 3&lt;/h3&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div id="panel3" class="accordion-panel" role="tabpanel" aria-labelledby="heading3" aria-expanded="false"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Accordion Content 3&lt;/p&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;h3 id="heading4" class="accordion-heading" role="tab" aria-controls="panel4" aria-selected="false" tabindex="-1"&gt;Accordion Heading 4&lt;/h3&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div id="panel4" class="accordion-panel" role="tabpanel" aria-labelledby="heading4" aria-expanded="false"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Accordion Content 4&lt;/p&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&lt;/div&gt;
+
+/* JAVASCRIPT SNIPPET */
+new Accordion('accordion1').init();
+</code></pre>
+                    </td>
+                </tr>
+            </table>
+        </section>
+        <section>
+            <h3 class="border">ACCORDION - RIGHT ALIGNED (SINGLE OPENED)</h3>
+            <table>
+                <tr>
+                    <td>
+                        <div class="accordion right" role="tablist" id="accordion3">
+                            <h3 id="heading9" class="accordion-heading" role="tab" aria-controls="panel9" aria-selected="false" tabindex="0">Accordion Heading 1</h3>
+                            <div id="panel9" class="accordion-panel" role="tabpanel" aria-labelledby="heading9" aria-expanded="false">
+                                <h4>Accordion Content 1</h4>
+                                <p>Quis libero, non dignissim, nisl maecenas vestibulum in rutrum aenean dolor, mi lacus consectetuer
+                                    neque tincidunt hendrerit, in urna velit at nec donec dignissim. Est tristique in eleifend
+                                    vestibulum, auctor risus, mi amet. Facilisis ultrices turpis dis sed rhoncus lectus.
+                                    Volutpat a proin pede magna arcu pulvinar, sit vel. Egestas erat, lectus semper, rhoncus
+                                    metus rutrum ultrices vitae, aliquet vestibulum ante volutpat. Mauris condimentum suspendisse
+                                    erat faucibus, nunc ornare vivamus, convallis sed pharetra est est, phasellus malesuada
+                                    mus bibendum dis. Justo euismod fermentum eu, convallis inceptos viverra ultrices amet
+                                    sed, consectetuer ridiculus lectus bibendum ut sit erat, aenean nibh augue egestas donec
+                                    dui, feugiat iaculis rutrum dui sociis.</p>
+                            </div>
+                            <h3 id="heading10" class="accordion-heading" role="tab" aria-controls="panel10" aria-selected="false" tabindex="-1">Accordion Heading 2</h3>
+                            <div id="panel10" class="accordion-panel" role="tabpanel" aria-labelledby="heading10" aria-expanded="false">
+                                <h4>Accordion Content 2</h4>
+                                <p>In aliquet lacinia, gravida id non egestas leo fermentum, eu erat mauris, mauris id ac. Curae
+                                    dolor eu rhoncus metus fringilla, nisl velit amet. Auctor at, amet libero lacus, id parturient
+                                    cras, curae quasi nunc, mauris donec cras tristique consequat cursus aliquam. Tortor
+                                    vitae venenatis, lacus justo elementum mattis aliquam. Diam ut iure adipiscing fusce
+                                    lorem vestibulum, et eget deserunt nunc non nunc. Ut orci erat adipiscing metus vel,
+                                    blandit posuere luctus pretium, nisl dui eu. Quis morbi integer, ut vestibulum aenean
+                                    libero, sit aut donec diam vehicula sodales, aliquam commodo volutpat dui nulla justo.
+                                    Suscipit ipsum mauris aliquam, eget ut sit, id fugit voluptate lacus, eleifend molestie
+                                    fermentum. A eu commodo, proin libero nam arcu praesent nullam, id donec nullam sit a,
+                                    illum magna nec. Ut suspendisse condimentum porttitor dapibus, leo id risus mi vestibulum
+                                    sit.
+                                </p>
+                            </div>
+                            <h3 id="heading11" class="accordion-heading" role="tab" aria-controls="panel11" aria-selected="false" tabindex="-1">Accordion Heading 3</h3>
+                            <div id="panel11" class="accordion-panel" role="tabpanel" aria-labelledby="heading11" aria-expanded="false">
+                                <h4>Accordion Content 3</h4>
+                                <p>Vitae ut, ultrices doloribus parturient leo sed, velit pede ultrices, ligula venenatis justo.
+                                    Vitae suspendisse faucibus consectetuer id aliquet id, posuere nec cras, vel gravida,
+                                    interdum nisl eleifend. Elit sed. Tristique maecenas, quam wisi vel at euismod, ornare
+                                    tempus mauris in diam a auctor, lectus nunc lectus aliquam, occaecati a ornare luctus
+                                    adipiscing vivamus elit. Eu lacus sed, sed tellus natoque temporibus vitae, quam aliquet,
+                                    suspendisse ullamcorper integer eros libero sit.</p>
+                            </div>
+                            <h3 id="heading12" class="accordion-heading" role="tab" aria-controls="panel12" aria-selected="false" tabindex="-1">Accordion Heading 4</h3>
+                            <div id="panel12" class="accordion-panel" role="tabpanel" aria-labelledby="heading12" aria-expanded="false">
+                                <h4>Accordion Content 4</h4>
+                                <p>Suspendisse aliquam non nibh, et ante vel, deserunt cursus leo. Aliquam praesent quis, praesent
+                                    sed wisi in ligula, vel vel montes, sollicitudin nisl lorem eget officiis, vehicula tincidunt
+                                    gravida in nunc elit sit. Rutrum massa a lorem semper potenti, in arcu nam faucibus.
+                                    Neque at, erat erat convallis congue vel maecenas torquent, urna ante lectus vitae montes
+                                    fermentum, tincidunt metus mauris amet arcu arcu sed. Duis vestibulum vitae vitae nullam
+                                    nam eu, lacus pellentesque. Aliquet ac ante vitae malesuada et per, aliquam libero aliquam,
+                                    auctor risus dictum volutpat nibh, vivamus suscipit ut vulputate dapibus ipsum enim.
+                                    Nam morbi, pellentesque lobortis sed adipiscing molestie wisi, nibh pede egestas. Arcu
+                                    magna sem, ea elit et at nec nunc pretium, congue ut condimentum sed risus, amet felis
+                                    elit malesuada scelerisque magnis. Augue vivamus proin volutpat, nunc non ipsum. Aliquam
+                                    fringilla, rhoncus maecenas tortor cum aliquam justo congue.</p>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <pre><code>&lt;!-- HTML SNIPPET --&gt;
+&lt;div class="accordion right" role="tablist" id="accordion1"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;h3 id="heading1" class="accordion-heading" role="tab" aria-controls="panel1" aria-selected="true" tabindex="0"&gt;Accordion Heading 1&lt;/h3&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div id="panel1" class="accordion-panel" role="tabpanel" aria-labelledby="heading1" aria-expanded="true"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Accordion Content 1&lt;/p&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;h3 id="heading2" class="accordion-heading" role="tab" aria-controls="panel2" aria-selected="false" tabindex="-1"&gt;Accordion Heading 2&lt;/h3&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div id="panel2" class="accordion-panel" role="tabpanel" aria-labelledby="heading2" aria-expanded="false"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Accordion Content 2&lt;/p&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;h3 id="heading3" class="accordion-heading" role="tab" aria-controls="panel3" aria-selected="false" tabindex="-1"&gt;Accordion Heading 3&lt;/h3&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div id="panel3" class="accordion-panel" role="tabpanel" aria-labelledby="heading3" aria-expanded="false"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Accordion Content 3&lt;/p&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;h3 id="heading4" class="accordion-heading" role="tab" aria-controls="panel4" aria-selected="false" tabindex="-1"&gt;Accordion Heading 4&lt;/h3&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div id="panel4" class="accordion-panel" role="tabpanel" aria-labelledby="heading4" aria-expanded="false"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Accordion Content 4&lt;/p&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&lt;/div&gt;
+
+/* JAVASCRIPT SNIPPET */
+new Accordion('accordion1').init();
+</code></pre>
+                    </td>
+                </tr>
+            </table>
+        </section>
+        <section>
+            <h3 class="border">ACCORDION - RIGHT ALIGNED (MULTIPLE OPENED)</h3>
+            <table>
+                <tr>
+                    <td>
+                        <div class="accordion right" role="tablist" multiselect="true" id="accordion4">
+                            <h3 id="heading13" class="accordion-heading" role="tab" aria-controls="panel13" aria-selected="false" tabindex="0">Accordion Heading 5</h3>
+                            <div id="panel13" class="accordion-panel" role="tabpanel" aria-labelledby="heading13" aria-expanded="false">
+                                <h4>Accordion Content 1</h4>
+                                <p>Quis libero, non dignissim, nisl maecenas vestibulum in rutrum aenean dolor, mi lacus consectetuer
+                                    neque tincidunt hendrerit, in urna velit at nec donec dignissim. Est tristique in eleifend
+                                    vestibulum, auctor risus, mi amet. Facilisis ultrices turpis dis sed rhoncus lectus.
+                                    Volutpat a proin pede magna arcu pulvinar, sit vel. Egestas erat, lectus semper, rhoncus
+                                    metus rutrum ultrices vitae, aliquet vestibulum ante volutpat. Mauris condimentum suspendisse
+                                    erat faucibus, nunc ornare vivamus, convallis sed pharetra est est, phasellus malesuada
+                                    mus bibendum dis. Justo euismod fermentum eu, convallis inceptos viverra ultrices amet
+                                    sed, consectetuer ridiculus lectus bibendum ut sit erat, aenean nibh augue egestas donec
+                                    dui, feugiat iaculis rutrum dui sociis.</p>
+                            </div>
+                            <h3 id="heading14" class="accordion-heading" role="tab" aria-controls="panel14" aria-selected="false" tabindex="-1">Accordion Heading 6</h3>
+                            <div id="panel14" class="accordion-panel" role="tabpanel" aria-labelledby="heading14" aria-expanded="false">
+                                <h4>Accordion Content 2</h4>
+                                <p>In aliquet lacinia, gravida id non egestas leo fermentum, eu erat mauris, mauris id ac. Curae
+                                    dolor eu rhoncus metus fringilla, nisl velit amet. Auctor at, amet libero lacus, id parturient
+                                    cras, curae quasi nunc, mauris donec cras tristique consequat cursus aliquam. Tortor
+                                    vitae venenatis, lacus justo elementum mattis aliquam. Diam ut iure adipiscing fusce
+                                    lorem vestibulum, et eget deserunt nunc non nunc. Ut orci erat adipiscing metus vel,
+                                    blandit posuere luctus pretium, nisl dui eu. Quis morbi integer, ut vestibulum aenean
+                                    libero, sit aut donec diam vehicula sodales, aliquam commodo volutpat dui nulla justo.
+                                    Suscipit ipsum mauris aliquam, eget ut sit, id fugit voluptate lacus, eleifend molestie
+                                    fermentum. A eu commodo, proin libero nam arcu praesent nullam, id donec nullam sit a,
+                                    illum magna nec. Ut suspendisse condimentum porttitor dapibus, leo id risus mi vestibulum
+                                    sit.
+                                </p>
+                            </div>
+                            <h3 id="heading15" class="accordion-heading" role="tab" aria-controls="panel15" aria-selected="false" tabindex="-1">Accordion Heading 7</h3>
+                            <div id="panel15" class="accordion-panel" role="tabpanel" aria-labelledby="heading15" aria-expanded="false">
+                                <h4>Accordion Content 3</h4>
+                                <p>Vitae ut, ultrices doloribus parturient leo sed, velit pede ultrices, ligula venenatis justo.
+                                    Vitae suspendisse faucibus consectetuer id aliquet id, posuere nec cras, vel gravida,
+                                    interdum nisl eleifend. Elit sed. Tristique maecenas, quam wisi vel at euismod, ornare
+                                    tempus mauris in diam a auctor, lectus nunc lectus aliquam, occaecati a ornare luctus
+                                    adipiscing vivamus elit. Eu lacus sed, sed tellus natoque temporibus vitae, quam aliquet,
+                                    suspendisse ullamcorper integer eros libero sit.</p>
+                            </div>
+                            <h3 id="heading16" class="accordion-heading" role="tab" aria-controls="panel16" aria-selected="false" tabindex="-1">Accordion Heading 8</h3>
+                            <div id="panel16" class="accordion-panel" role="tabpanel" aria-labelledby="heading16" aria-expanded="false">
+                                <h4>Accordion Content 4</h4>
+                                <p>Suspendisse aliquam non nibh, et ante vel, deserunt cursus leo. Aliquam praesent quis, praesent
+                                    sed wisi in ligula, vel vel montes, sollicitudin nisl lorem eget officiis, vehicula tincidunt
+                                    gravida in nunc elit sit. Rutrum massa a lorem semper potenti, in arcu nam faucibus.
+                                    Neque at, erat erat convallis congue vel maecenas torquent, urna ante lectus vitae montes
+                                    fermentum, tincidunt metus mauris amet arcu arcu sed. Duis vestibulum vitae vitae nullam
+                                    nam eu, lacus pellentesque. Aliquet ac ante vitae malesuada et per, aliquam libero aliquam,
+                                    auctor risus dictum volutpat nibh, vivamus suscipit ut vulputate dapibus ipsum enim.
+                                    Nam morbi, pellentesque lobortis sed adipiscing molestie wisi, nibh pede egestas. Arcu
+                                    magna sem, ea elit et at nec nunc pretium, congue ut condimentum sed risus, amet felis
+                                    elit malesuada scelerisque magnis. Augue vivamus proin volutpat, nunc non ipsum. Aliquam
+                                    fringilla, rhoncus maecenas tortor cum aliquam justo congue.</p>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <pre><code>&lt;!-- HTML SNIPPET --&gt;
+&lt;div class="accordion right" role="tablist" id="accordion1" multiselect="true"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;h3 id="heading1" class="accordion-heading" role="tab" aria-controls="panel1" aria-selected="true" tabindex="0"&gt;Accordion Heading 1&lt;/h3&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div id="panel1" class="accordion-panel" role="tabpanel" aria-labelledby="heading1" aria-expanded="true"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Accordion Content 1&lt;/p&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;h3 id="heading2" class="accordion-heading" role="tab" aria-controls="panel2" aria-selected="false" tabindex="-1"&gt;Accordion Heading 2&lt;/h3&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div id="panel2" class="accordion-panel" role="tabpanel" aria-labelledby="heading2" aria-expanded="false"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Accordion Content 2&lt;/p&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;h3 id="heading3" class="accordion-heading" role="tab" aria-controls="panel3" aria-selected="false" tabindex="-1"&gt;Accordion Heading 3&lt;/h3&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div id="panel3" class="accordion-panel" role="tabpanel" aria-labelledby="heading3" aria-expanded="false"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Accordion Content 3&lt;/p&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;h3 id="heading4" class="accordion-heading" role="tab" aria-controls="panel4" aria-selected="false" tabindex="-1"&gt;Accordion Heading 4&lt;/h3&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div id="panel4" class="accordion-panel" role="tabpanel" aria-labelledby="heading4" aria-expanded="false"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Accordion Content 4&lt;/p&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&lt;/div&gt;
+
+/* JAVASCRIPT SNIPPET */
+new Accordion('accordion1').init();
+</code></pre>
+                    </td>
+                </tr>
+            </table>
+        </section>
+        <script src="../dist/ux-styleguide.min.js"></script>
+        <script type="text/javascript">
+            new Accordion('accordion1').init();
+            new Accordion('accordion2').init();
+            new Accordion('accordion3').init();
+            new Accordion('accordion4').init();
+        </script>
+    </div>
+</body>
+
+</html>

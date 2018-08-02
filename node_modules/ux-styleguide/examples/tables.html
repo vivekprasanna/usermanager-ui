@@ -1,0 +1,881 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../dist/ux-styleguide.min.css">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta charset="utf-8" />
+	<title>UX Styleguide - Tables</title>
+	<style>
+		body {
+		    background-color: #FFFFFF;
+		    overflow-x: hidden;
+		}
+
+		code,
+		pre {
+		    padding: 0 3px 2px;
+		    font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
+		    font-size: 12px;
+		    color: #333333;
+		    -webkit-border-radius: 3px;
+		       -moz-border-radius: 3px;
+		            border-radius: 3px;
+		    height: 100%;
+		}
+
+		pre {
+		    display: block;
+		    padding: 9.5px;
+		    margin: 0 0 10px;
+		    font-size: 13px;
+		    line-height: 20px;
+		    word-break: break-all;
+		    word-wrap: break-word;
+		    white-space: pre;
+		    white-space: pre-wrap;
+		    background-color: #F5F5F5;
+		    border: 1px solid #CCCCCC;
+		    border: 1px solid rgba(0, 0, 0, 0.15);
+		    -webkit-border-radius: 4px;
+		       -moz-border-radius: 4px;
+		            border-radius: 4px;
+		}
+
+		pre code {
+		    padding: 0;
+		    color: inherit;
+		    white-space: pre;
+		    white-space: pre-wrap;
+		    background-color: transparent;
+		    border: 0;
+		}
+
+		section {
+		    margin: auto;
+		    padding: 10px;
+		}
+
+		table.code-table {
+		    width: 100%;
+		    border-collapse: separate;
+		    border-spacing: 10px 20px;
+		    min-width: 1240px;
+		}
+
+		td.code-td {
+		    width: 50%;
+		    vertical-align: top;
+		    height: 1px;
+		}
+
+		@media screen and (max-width: 600px) {
+		    table.code-table {
+		        min-width: 100%;
+		    }
+		}
+
+		.back-btn {
+		    font-size: 20px !important;
+		    margin-right: 5px !important;
+		}
+
+		.back-btn > a {
+		    color: #FFFFFF;
+		    text-decoration: none;
+		}
+
+		.content {
+		    padding: 0 20px 0;
+		}
+
+	</style>
+</head>
+
+<body>
+	<div class="header">
+		<div class="header-logo">
+			<i class="icon_homedepot"></i>
+		</div>
+		<div class="header-info">
+			<label class="product-info">UX Styleguide</label>
+			<label class="user-info">Components and Patterns provided by Home Depot UX</label>
+		</div>
+		<div class="header-search">
+		</div>
+		<div class="header-actions">
+			<div class="back-btn">
+				<a href="../index.html">Back</a>
+			</div>
+		</div>
+	</div>
+	<div class="content">
+		<h1>Tables</h1>
+		<h3 class="border">STATIC TABLE</h3>
+		<table class="code-table">
+			<tr>
+				<td class="code-td">
+					<table class="standard-table">
+						<thead>
+							<tr>
+								<th>
+									<span>Column 1</span>
+								</th>
+								<th>
+									<span>Column 2</span>
+								</th>
+								<th>
+									<span>Column 3</span>
+								</th>
+								<th>
+									<span>Column 4</span>
+								</th>
+								<th>
+									<span>Column 5</span>
+								</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Row1:Data1</td>
+								<td>Row1:Data2</td>
+								<td>Row1:Data3</td>
+								<td>Row1:Data4</td>
+								<td>Row1:Data5</td>
+							</tr>
+							<tr>
+								<td>Row2:Data1</td>
+								<td>Row2:Data2</td>
+								<td>Row2:Data3</td>
+								<td>Row2:Data4</td>
+								<td>Row2:Data5</td>
+							</tr>
+							<tr>
+								<td>Row3:Data1</td>
+								<td>Row3:Data2</td>
+								<td>Row3:Data3</td>
+								<td>Row3:Data4</td>
+								<td>Row3:Data5</td>
+							</tr>
+							<tr>
+								<td>Row4:Data1</td>
+								<td>Row4:Data2</td>
+								<td>Row4:Data3</td>
+								<td>Row4:Data4</td>
+								<td>Row4:Data5</td>
+							</tr>
+						</tbody>
+					</table>
+				</td>
+				<td class="code-td">
+					<pre><code>&lt;table class="standard-table"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;thead&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;&lt;span&gt;Column 1&lt;/span&gt;&lt;/th&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;&lt;span&gt;Column 2&lt;/span&gt;&lt;/th&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;&lt;span&gt;Column 3&lt;/span&gt;&lt;/th&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;&lt;span&gt;Column 4&lt;/span&gt;&lt;/th&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;&lt;span&gt;Column 5&lt;/span&gt;&lt;/th&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/thead&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;tbody&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Row1:Data1&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Row1:Data2&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Row1:Data3&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Row1:Data4&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Row1:Data5&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Row2:Data1&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Row2:Data2&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Row2:Data3&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Row2:Data4&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Row2:Data5&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Row3:Data1&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Row3:Data2&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Row3:Data3&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Row3:Data4&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Row3:Data5&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Row4:Data1&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Row4:Data2&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Row4:Data3&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Row4:Data4&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Row4:Data5&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
+				</td>
+			</tr>
+		</table>
+		<h3 class="border">TABLE w/ALTERNATING ROWS</h3>
+		<table class="code-table">
+			<tr>
+				<td class="code-td">
+					<table class="standard-table alternating-rows">
+						<thead>
+							<tr>
+								<th>
+									<span>Column 1</span>
+								</th>
+								<th>
+									<span>Column 2</span>
+								</th>
+								<th>
+									<span>Column 3</span>
+								</th>
+								<th>
+									<span>Column 4</span>
+								</th>
+								<th>
+									<span>Column 5</span>
+								</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Row1:Data1</td>
+								<td>Row1:Data2</td>
+								<td>Row1:Data3</td>
+								<td>Row1:Data4</td>
+								<td>Row1:Data5</td>
+							</tr>
+							<tr>
+								<td>Row2:Data1</td>
+								<td>Row2:Data2</td>
+								<td>Row2:Data3</td>
+								<td>Row2:Data4</td>
+								<td>Row2:Data5</td>
+							</tr>
+							<tr>
+								<td>Row3:Data1</td>
+								<td>Row3:Data2</td>
+								<td>Row3:Data3</td>
+								<td>Row3:Data4</td>
+								<td>Row3:Data5</td>
+							</tr>
+							<tr>
+								<td>Row4:Data1</td>
+								<td>Row4:Data2</td>
+								<td>Row4:Data3</td>
+								<td>Row4:Data4</td>
+								<td>Row4:Data5</td>
+							</tr>
+						</tbody>
+					</table>
+				</td>
+				<td class="code-td">
+					<pre><code>&lt;table class="standard-table alternating-rows"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;thead&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;&lt;span&gt;Column 1&lt;/span&gt;&lt;/th&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;&lt;span&gt;Column 2&lt;/span&gt;&lt;/th&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;&lt;span&gt;Column 3&lt;/span&gt;&lt;/th&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;&lt;span&gt;Column 4&lt;/span&gt;&lt;/th&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;&lt;span&gt;Column 5&lt;/span&gt;&lt;/th&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/thead&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;tbody&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Row1:Data1&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Row1:Data2&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Row1:Data3&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Row1:Data4&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Row1:Data5&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Row2:Data1&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Row2:Data2&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Row2:Data3&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Row2:Data4&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Row2:Data5&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Row3:Data1&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Row3:Data2&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Row3:Data3&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Row3:Data4&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Row3:Data5&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Row4:Data1&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Row4:Data2&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Row4:Data3&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Row4:Data4&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Row4:Data5&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
+				</td>
+			</tr>
+		</table>
+		<h3 class="border">TABLE w/VERTICAL LINES</h3>
+		<table class="code-table">
+			<tr>
+				<td class="code-td">
+					<table class="standard-table vertical-lines">
+						<thead>
+							<tr>
+								<th>
+									<span>Column 1</span>
+								</th>
+								<th>
+									<span>Column 2</span>
+								</th>
+								<th>
+									<span>Column 3</span>
+								</th>
+								<th>
+									<span>Column 4</span>
+								</th>
+								<th>
+									<span>Column 5</span>
+								</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Row1:Data1</td>
+								<td>Row1:Data2</td>
+								<td>Row1:Data3</td>
+								<td>Row1:Data4</td>
+								<td>Row1:Data5</td>
+							</tr>
+							<tr>
+								<td>Row2:Data1</td>
+								<td>Row2:Data2</td>
+								<td>Row2:Data3</td>
+								<td>Row2:Data4</td>
+								<td>Row2:Data5</td>
+							</tr>
+							<tr>
+								<td>Row3:Data1</td>
+								<td>Row3:Data2</td>
+								<td>Row3:Data3</td>
+								<td>Row3:Data4</td>
+								<td>Row3:Data5</td>
+							</tr>
+							<tr>
+								<td>Row4:Data1</td>
+								<td>Row4:Data2</td>
+								<td>Row4:Data3</td>
+								<td>Row4:Data4</td>
+								<td>Row4:Data5</td>
+							</tr>
+						</tbody>
+					</table>
+				</td>
+				<td class="code-td">
+					<pre><code>&lt;table class="standard-table vertical-lines"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;thead&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;&lt;span&gt;Column 1&lt;/span&gt;&lt;/th&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;&lt;span&gt;Column 2&lt;/span&gt;&lt;/th&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;&lt;span&gt;Column 3&lt;/span&gt;&lt;/th&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;&lt;span&gt;Column 4&lt;/span&gt;&lt;/th&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;&lt;span&gt;Column 5&lt;/span&gt;&lt;/th&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/thead&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;tbody&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Row1:Data1&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Row1:Data2&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Row1:Data3&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Row1:Data4&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Row1:Data5&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Row2:Data1&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Row2:Data2&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Row2:Data3&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Row2:Data4&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Row2:Data5&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Row3:Data1&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Row3:Data2&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Row3:Data3&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Row3:Data4&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Row3:Data5&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Row4:Data1&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Row4:Data2&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Row4:Data3&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Row4:Data4&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Row4:Data5&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
+				</td>
+			</tr>
+		</table>
+		</section>
+		<section>
+			<h3 class="border">Dynamic Table</h3>
+			<table class="code-table">
+				<tr>
+					<td class="code-td">
+						<table class="standard-table" id="dynamicTable">
+						</table>
+					</td>
+					<td class="code-td">
+						<pre><code>&lt;!-- HTML --&gt;
+&lt;table class="standard-table" id="tableID"&gt;
+&lt;/table&gt;
+
+
+/* JavaScript */
+// Array of table columns
+var columns = [
+&nbsp;&nbsp;&nbsp;&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;name: 'DC 1', // Display name of column
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;key: 'dc1', // Key name of column
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sortable: true // Enable sorting for column
+&nbsp;&nbsp;&nbsp;&nbsp;},
+&nbsp;&nbsp;&nbsp;&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;name: 'DC 2', // Display name of column
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;key: 'dc2', // Key name of column
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sortable: true, // Enable sorting for column
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;defaultSort: true // Specify as initial sort for table
+&nbsp;&nbsp;&nbsp;&nbsp;},
+&nbsp;&nbsp;&nbsp;&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;name: 'Center Align', // Display name of column
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;key: 'dc3', // Key name of column
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;centerAlign: true // Center align column content
+&nbsp;&nbsp;&nbsp;&nbsp;},
+&nbsp;&nbsp;&nbsp;&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;name: 'Right Align', // Display name of column
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;key: 'dc4', // Key name of column
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sortable: true, // Enable sorting for column
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rightAlign: true // Right align column content
+&nbsp;&nbsp;&nbsp;&nbsp;}
+];
+
+// Array of table rows
+// Object keys must correspond to column key name
+var rows = [
+&nbsp;&nbsp;&nbsp;&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dc1: 'data1',
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dc2: 9,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dc3: 'data6',
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dc4: '$22.83'
+&nbsp;&nbsp;&nbsp;&nbsp;},
+&nbsp;&nbsp;&nbsp;&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dc1: 'data4',
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dc2: 8,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dc3: 'data9',
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dc4: '$10.10'
+&nbsp;&nbsp;&nbsp;&nbsp;},
+&nbsp;&nbsp;&nbsp;&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dc1: 'data3',
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dc2: 5,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dc3: 'data4',
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dc4: '$07.77'
+&nbsp;&nbsp;&nbsp;&nbsp;},
+&nbsp;&nbsp;&nbsp;&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dc1: 'data7',
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dc2: 2,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dc3: 'data9',
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dc4: '$13.37'
+&nbsp;&nbsp;&nbsp;&nbsp;},
+&nbsp;&nbsp;&nbsp;&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dc1: 'data2',
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dc2: 3,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dc3: 'data7',
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dc4: '$40.38'
+&nbsp;&nbsp;&nbsp;&nbsp;}
+];
+
+// Initialize table via id and passing columns and rows
+new Table('tableID').init(columns, rows);
+</code></pre>
+					</td>
+				</tr>
+			</table>
+		</section>
+		<section>
+			<h3 class="border">Dynamic Table w/ Checkboxes</h3>
+			<table class="code-table">
+				<tr>
+					<td class="code-td">
+						<table class="standard-table" id="checkboxTable">
+						</table>
+					</td>
+					<td class="code-td">
+						<pre><code>&lt;!-- HTML --&gt;
+&lt;table class="standard-table" id="tableID"&gt;
+&lt;/table&gt;
+
+
+/* JavaScript */
+// Array of table columns
+var columns = [ ... ];
+
+// Array of table rows
+// Object keys must correspond to column key name
+var rows = [ ... ];
+
+// Create options object with showCheckboxes attribute
+var options = {
+	showCheckboxes: true,
+    checkboxCallback: function() { ... } // Execute function whenever a checkbox is clicked, optional
+};
+
+// Initialize table via id and passing columns, rows, and options
+new Table('tableID').init(columns, rows, options);
+
+Then access the `checked` property for each item in the rows array.
+</code></pre>
+					</td>
+				</tr>
+			</table>
+		</section>
+		<section>
+			<h3 class="border">Dynamic Table w/ Buttons</h3>
+			<table class="code-table">
+				<tr>
+					<td class="code-td">
+						<table class="standard-table" id="buttonTable">
+						</table>
+					</td>
+					<td class="code-td">
+						<pre><code>&lt;!-- HTML --&gt;
+&lt;table class="standard-table" id="tableID"&gt;
+&lt;/table&gt;
+
+
+/* JavaScript */
+// Array of table columns
+var columns = [
+&nbsp;&nbsp;&nbsp;&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;name: 'DC 1', // Display name of column
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;key: 'dc1', // Key name of column
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sortable: true // Enable sorting for column
+&nbsp;&nbsp;&nbsp;&nbsp;},
+&nbsp;&nbsp;&nbsp;&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;name: 'DC 2', // Display name of column
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;key: 'dc2', // Key name of column
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sortable: true, // Enable sorting for column
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;defaultSort: true // Specify as initial sort for table
+&nbsp;&nbsp;&nbsp;&nbsp;},
+&nbsp;&nbsp;&nbsp;&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;name: 'Center Align', // Display name of column
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;key: 'dc3', // Key name of column
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;centerAlign: true // Center align column content
+&nbsp;&nbsp;&nbsp;&nbsp;},
+&nbsp;&nbsp;&nbsp;&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;name: 'Right Align', // Display name of column
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;key: 'dc4', // Key name of column
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sortable: true, // Enable sorting for column
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rightAlign: true // Right align column content
+&nbsp;&nbsp;&nbsp;&nbsp;},
+&nbsp;&nbsp;&nbsp;&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;name: 'center Align', // Display name of column
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;key: 'dc5', // Key name of column
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;centerAlign: true // Center align column content
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;button: true // Enables buttons for column
+&nbsp;&nbsp;&nbsp;&nbsp;}
+];
+
+// Array of table rows
+// Object keys must correspond to column key name
+/** 
+	Button rows accept an object with 4 properties
+	label: label of button
+	class: string of classes to be applied to button separated by spaces
+	event: function that takes data property and is run when button is clicked
+	data: accepts any input as a parameter for the event
+*/
+var rows = [
+&nbsp;&nbsp;&nbsp;&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dc1: 'data1',
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dc2: 9,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dc3: 'data6',
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dc4: '$22.83',
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dc5: { label: 'button1', class: 'primary sm', event: buttonCallback, data: 'callbackData'}
+&nbsp;&nbsp;&nbsp;&nbsp;},
+&nbsp;&nbsp;&nbsp;&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dc1: 'data4',
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dc2: 8,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dc3: 'data9',
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dc4: '$10.10',
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dc5: { label: 'button2', class: 'primary sm', event: buttonCallback, data: 'callbackData'}
+&nbsp;&nbsp;&nbsp;&nbsp;},
+&nbsp;&nbsp;&nbsp;&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dc1: 'data3',
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dc2: 5,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dc3: 'data4',
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dc4: '$07.77',
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dc5: { label: 'button3', class: 'primary sm', event: buttonCallback, data: 'callbackData'}
+&nbsp;&nbsp;&nbsp;&nbsp;},
+&nbsp;&nbsp;&nbsp;&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dc1: 'data7',
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dc2: 2,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dc3: 'data9',
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dc4: '$13.37',
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dc5: { label: 'button4', class: 'sm', event: buttonCallback, data: 'callbackData'}
+&nbsp;&nbsp;&nbsp;&nbsp;},
+&nbsp;&nbsp;&nbsp;&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dc1: 'data2',
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dc2: 3,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dc3: 'data7',
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dc4: '$40.38',
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dc5: { label: 'button5', class: 'sm', event: buttonCallback, data: 'callbackData'}
+&nbsp;&nbsp;&nbsp;&nbsp;}
+];
+
+// Function to be executed when button is clicked
+var buttonCallback = function(data) {
+	console.log(data);
+};
+
+// Initialize table via id and passing columns, rows
+new Table('tableID').init(columns, rows);
+</code></pre>
+					</td>
+				</tr>
+			</table>
+		</section>
+		<section>
+			<h3 class="border">Dynamic Table w/Filters</h3>
+			<table class="code-table">
+				<tr>
+					<td class="code-td">
+						<table class="filter-table" id="filterTable">
+						</table>
+					</td>
+					<td class="code-td">
+						<pre><code>&lt;!-- HTML --&gt;
+&lt;table class="filter-table" id="tableID"&gt;
+&lt;/table&gt;
+
+
+/* JavaScript */
+// Array of table columns
+var columns = [
+&nbsp;&nbsp;&nbsp;&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;name: 'DC 1', // Display name of column
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;key: 'dc1', // Key name of column
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sortable: true // Enable sorting for column
+&nbsp;&nbsp;&nbsp;&nbsp;},
+&nbsp;&nbsp;&nbsp;&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;name: 'DC 2', // Display name of column
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;key: 'dc2', // Key name of column
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sortable: true, // Enable sorting for column
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;defaultSort: true, // Specify as initial sort for table
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;filterPlaceholder: 'Custom Text' // Option to specify text in filter input
+&nbsp;&nbsp;&nbsp;&nbsp;},
+&nbsp;&nbsp;&nbsp;&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;name: 'Center Align', // Display name of column
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;key: 'dc3', // Key name of column
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;centerAlign: true, // Center align column content
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;filterPlaceholder: ' ' // Option to specify empty text in filter input
+&nbsp;&nbsp;&nbsp;&nbsp;},
+&nbsp;&nbsp;&nbsp;&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;name: 'Right Align', // Display name of column
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;key: 'dc4', // Key name of column
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sortable: true, // Enable sorting for column
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rightAlign: true // Right align column content
+&nbsp;&nbsp;&nbsp;&nbsp;}
+];
+
+// Array of table rows
+// Object keys must correspond to column key name
+var rows = [
+&nbsp;&nbsp;&nbsp;&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dc1: 'data1',
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dc2: 9,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dc3: 'data6',
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dc4: '$22.83'
+&nbsp;&nbsp;&nbsp;&nbsp;},
+&nbsp;&nbsp;&nbsp;&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dc1: 'data4',
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dc2: 8,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dc3: 'data9',
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dc4: '$10.10'
+&nbsp;&nbsp;&nbsp;&nbsp;},
+&nbsp;&nbsp;&nbsp;&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dc1: 'data3',
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dc2: 5,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dc3: 'data4',
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dc4: '$07.77'
+&nbsp;&nbsp;&nbsp;&nbsp;},
+&nbsp;&nbsp;&nbsp;&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dc1: 'data7',
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dc2: 2,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dc3: 'data9',
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dc4: '$13.37'
+&nbsp;&nbsp;&nbsp;&nbsp;},
+&nbsp;&nbsp;&nbsp;&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dc1: 'data2',
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dc2: 3,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dc3: 'data7',
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dc4: '$40.38'
+&nbsp;&nbsp;&nbsp;&nbsp;},
+&nbsp;&nbsp;&nbsp;&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dc1: 'data77',
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dc2: 77,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dc3: 'data77',
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dc4: '$77.77'
+&nbsp;&nbsp;&nbsp;&nbsp;}
+];
+
+// Initialize table via id and passing columns and rows
+var fTable = new FilterTable('tableID');
+fTable.init(columns, rows);
+
+// To utilize a custom filter callback function
+function callback(filters) {
+    // filters is an array as follows
+    [
+        "columnkey": "searchvalue",
+        "columnkey": "searchvalue",
+        ...
+    ]
+    // Execute custom filtering/fetching data
+    ...
+    // Refresh table rows
+    fTable.load(rows);
+}
+fTable.init(columns, rows, callback);
+</code></pre>
+					</td>
+				</tr>
+			</table>
+		</section>
+		<script src="../dist/ux-styleguide.min.js"></script>
+		<script type="text/javascript">
+			var columns = [
+				{
+					name: 'DC 1',
+					key: 'dc1',
+					sortable: true
+				},
+				{
+					name: 'DC 2',
+					key: 'dc2',
+					sortable: true,
+					defaultSort: true,
+					filterPlaceholder: 'Custom Text'
+				},
+				{
+					name: 'Center Align',
+					key: 'dc3',
+					centerAlign: true,
+					filterPlaceholder: ' '
+				},
+				{
+					name: 'Right Align',
+					key: 'dc4',
+					sortable: true,
+					rightAlign: true
+				}
+			];
+	
+			var buttonColumns = [
+				{
+					name: 'DC 1',
+					key: 'dc1',
+					sortable: true
+				},
+				{
+					name: 'DC 2',
+					key: 'dc2',
+					sortable: true,
+					defaultSort: true,
+					filterPlaceholder: 'Custom Text'
+				},
+				{
+					name: 'Center Align',
+					key: 'dc3',
+					centerAlign: true,
+					filterPlaceholder: ' '
+				},
+				{
+					name: 'Right Align',
+					key: 'dc4',
+					sortable: true,
+					rightAlign: true
+				},
+				{
+					name: 'Center Align',
+					key: 'dc5',
+					centerAlign: true,
+					button: true
+				}
+			];
+			
+			/* Callback for buttons in table */
+			var buttonCallback = function(data) {
+				console.log(data);
+			};
+
+			var rows = [
+				{
+					dc3: 'data6',
+					dc1: 'data1',
+					dc4: '$22.83',
+					dc2: 9,
+					dc5: { label: 'button1', class: 'primary sm', event: buttonCallback, data: '$22.83'}
+				},
+				{
+					dc1: 'data4',
+					dc2: 8,
+					dc3: 'data9',
+					dc4: '$10.10',
+					dc5: { label: 'button2', class: 'primary sm', event: buttonCallback, data: '$10.10'}
+				},
+				{
+					dc1: 'data3',
+					dc2: 5,
+					dc3: 'data4',
+					dc4: '$07.77',
+					dc5: { label: 'button3', class: 'primary sm', event: buttonCallback, data: '$07.77'}
+				},
+				{
+					dc1: 'data7',
+					dc2: 2,
+					dc3: 'data9',
+					dc4: '$13.37',
+					dc5: { label: 'button4', class: 'sm', event: buttonCallback, data: '$13.37'}
+				},
+				{
+					dc1: 'data2',
+					dc2: 3,
+					dc3: 'data7',
+					dc4: '$40.38',
+					dc5: { label: 'button5', class: 'sm', event: buttonCallback, data: '$40.38'}
+				}
+			];
+	
+			/* Dynamic Table */
+			new Table('dynamicTable').init(columns, rows);
+	
+			/* Checkbox Table */
+			var cbCallback = function() {
+				// Iterate through rows to see which are checked
+				console.log('checkboxCallback');
+			};
+			new Table('checkboxTable').init(columns, rows, {showCheckboxes: true, checkboxCallback: cbCallback});
+	
+			/* Button Table */
+			new Table('buttonTable').init(buttonColumns, rows);
+	
+			/* Filter Table */
+			var fTable = new FilterTable('filterTable');
+			var filterCallback =  function(filters){
+				// Call external source and reload data
+				fTable.load(rows);
+			};
+			fTable.init(columns, rows);
+		</script>
+	</div>
+</body>
+
+</html>
